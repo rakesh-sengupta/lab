@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EEG Analysis Bootcamp · 12 September 2026 · Computational Cognition Laboratory, Krea University</title>
+<meta name="description" content="A one-day hands-on EEG analysis bootcamp at SIAS, Krea University: from a raw 64-channel recording to an event-related potential in MNE-Python, then replicated in EEGLAB. Saturday 12 September 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Computational&nbsp;Cognition&nbsp;<b>Lab</b></a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+    <ul id="navMenu">
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a href="index.html#people">People</a></li>
+      <li><a href="index.html#cv">CV</a></li>
+      <li><a href="bootcamp.html" class="active">EEG Bootcamp</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">PSYC239 · Programming for Psychologists</div>
+        <h1>EEG Analysis <em>Bootcamp</em></h1>
+        <div class="datebadge">Saturday, 12 September 2026 · 09:15 – 17:00</div>
+        <p class="lede">From a raw 64-channel recording to a clean event-related potential, <strong>twice</strong>: scripted in Python with MNE, then replicated in MATLAB with EEGLAB. Three sessions, six contact hours, one real dataset, three checkpoints.</p>
+        <a class="btn" href="bootcamp/EEG_Bootcamp_Brochure_12Sep2026.pdf">Brochure (PDF)</a>
+        <a class="btn ghost" href="#schedule">Schedule</a>
+      </div>
+      <aside class="pi-card">
+        <h3>At a glance</h3>
+        <div class="meta">
+          <span>Computer lab, SIAS, Krea University, Sri City (room to be confirmed)</span>
+          <span>Instructor: Dr. Rakesh Sengupta</span>
+          <span>Teaching Fellow: Lekhana Priya Gundapaneni</span>
+          <span>TAs: Rakshitaasai Karthinarayanan · Arush Menon</span>
+          <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+        </div>
+      </aside>
+    </div>
+    <figure class="hero-visual reveal">
+      <img src="assets/bc_pipeline.png" alt="The eight-step pipeline: load, inspect, montage, filter, bad channels, interpolate, re-reference, save">
+      <figcaption>Session 1's pipeline: eight steps from a raw <code>.mff</code> to a clean continuous file. Session 2 continues to epochs and ERPs; Session 3 repeats everything in EEGLAB.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>What the day is about</h2></div></div>
+    <p class="sec-intro reveal">Every participant takes one real recording — a 64-channel EGI dataset from the lab's covert/overt articulation study — from the file on disk to a finished ERP, first in Python with MNE, then again in MATLAB with EEGLAB. The point is not only the pipeline but the comparison: what each step does, why two toolboxes make the same decisions in different clothing, and how to read a Methods section critically.</p>
+    <div class="themes reveal" style="grid-template-columns:repeat(3,1fr);margin-top:30px;">
+      <div class="theme"><span class="tnum">Session 1 · 09:30</span><h4>MNE I — raw to clean</h4><p>Sampling, channels, reference; loading an <code>.mff</code>; filtering; bad channels; average reference. Checkpoint 1: a filtered, re-referenced power spectrum.</p></div>
+      <div class="theme"><span class="tnum">Session 2 · 11:45</span><h4>MNE II — clean to ERP</h4><p>ICA for eye and muscle artefacts; events and epochs; averaging; topographic maps; a first look at time–frequency analysis. Checkpoint 2: an evoked plot with a topomap.</p></div>
+      <div class="theme"><span class="tnum">Session 3 · 14:45</span><h4>The EEGLAB round</h4><p>The same pipeline replicated in EEGLAB with ICLabel; side-by-side comparison of the two ERPs and where they differ. Checkpoint 3: an EEGLAB ERP and a saved <code>.set</code>.</p></div>
+    </div>
+    <div class="twocol">
+      <div>
+        <h4>By the end of the day, each participant has</h4>
+        <ul>
+          <li>a working Jupyter notebook that loads, filters, cleans, epochs and averages the dataset in MNE-Python;</li>
+          <li>an EEGLAB <code>.set</code> file and script reproducing the same pipeline;</li>
+          <li>a one-page written comparison of the two outputs (take-home, due Friday 18 September);</li>
+          <li>a Methods paragraph they can defend, written from their own numbers.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Who should attend, and what to bring</h4>
+        <p>Students of PSYC239. Other SIAS students with an interest in cognitive neuroscience are welcome as seats allow. No prior EEG experience is assumed; basic Python familiarity helps. Bring your own laptop and charger; install instructions are circulated the week before, with an optional install clinic on the Thursday. Lab machines with MATLAB licences are reserved for the EEGLAB session, with pairing allowed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">02</span><div><h2>Schedule</h2></div></div>
+    <table class="sched reveal">
+      <tr><th>Time</th><th>Block</th><th>Content</th></tr>
+      <tr><td>09:15</td><td><b>Arrival</b></td><td>Setup, environment check, dataset copy verification</td></tr>
+      <tr><td>09:30</td><td><b>Session 1</b></td><td>MNE I: orientation; loading and inspecting; filtering; bad channels and re-referencing; guided practice → Checkpoint 1</td></tr>
+      <tr><td>11:30</td><td>Break</td><td></td></tr>
+      <tr><td>11:45</td><td><b>Session 2</b></td><td>MNE II: ICA; events and epochs; averaging and visualisation; guided practice → Checkpoint 2; stretch: time–frequency</td></tr>
+      <tr><td>13:45</td><td>Lunch</td><td>TA team debrief; pairing for the afternoon</td></tr>
+      <tr><td>14:45</td><td><b>Session 3</b></td><td>The EEGLAB round: orientation; import; replication; ERP and comparison; guided practice → Checkpoint 3; scripting versus GUI</td></tr>
+      <tr class="hl"><td>16:45</td><td><b>Wrap-up</b></td><td>Take-home assignment briefing; feedback form</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="dataset">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">03</span><div><h2>The dataset, and what it looks like</h2></div></div>
+    <p class="sec-intro reveal">One anonymised participant from the lab's study of alpha-band power during covert and overt articulation (Gundapaneni, Sengupta, Mandal &amp; Maganti, in press): a 22-minute, 250 Hz, 64-channel EGI recording with 200 cued trials across five conditions. Participants work with the same file, the same event codes and the same preprocessing decisions that appear in the published Methods. Every figure below was produced from that recording with the bootcamp's own pipeline.</p>
+    <div class="gallery reveal">
+      <figure class="wide"><img src="assets/bc_psd.png" alt="Power spectral density after filtering"><figcaption>Checkpoint 1. The power spectrum after a 0.1–40 Hz band-pass, 50 Hz notch, channel repair and average reference. The peak at 10 Hz is the participant's own alpha rhythm.</figcaption></figure>
+      <figure><img src="assets/bc_sensors.png" alt="Sensor layout of the HydroCel GSN 64 net"><figcaption>The HydroCel GSN 64 layout, as MNE reads it from the recording's own coordinates file.</figcaption></figure>
+      <figure><img src="assets/bc_ica.png" alt="ICA component scalp maps"><figcaption>Session 2. Independent components: the blink (ICA001) and horizontal eye movements (ICA002) beside components that look like brain.</figcaption></figure>
+      <figure class="wide"><img src="assets/bc_erp.png" alt="Butterfly plot and scalp maps of the overt-word ERP"><figcaption>Checkpoint 2. The cue-locked ERP for overt words with scalp maps at three latencies. The late drift on the outermost channels is the mouth starting to move — a point the bootcamp makes explicitly.</figcaption></figure>
+      <figure class="wide"><img src="assets/bc_tfr.png" alt="Time–frequency maps for overt, covert and control conditions"><figcaption>Stretch block. Alpha power relative to the preceding rest period for overt, covert and control trials, computed the way the study did it.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">04</span><div><h2>Teaching team</h2></div></div>
+    <div class="themes reveal" style="grid-template-columns:repeat(2,1fr);">
+      <div class="theme" style="display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:start;">
+        <img src="assets/rakesh.jpg" alt="Dr. Rakesh Sengupta" style="margin:0;height:128px;object-fit:cover;">
+        <div><span class="tnum">Instructor</span><h4>Dr. Rakesh Sengupta</h4><p>Assistant Professor, SIAS; Principal Investigator, Computational Cognition Laboratory. Computational neuroscience of number, memory and time; runs the laboratory's EEG programme.</p></div>
+      </div>
+      <div class="theme"><span class="tnum">Teaching Fellow</span><h4>Lekhana Priya Gundapaneni</h4><p>Overall coordination, co-instruction, checkpoint verification. First author of the study the dataset comes from.</p></div>
+      <div class="theme"><span class="tnum">Teaching Assistant</span><h4>Rakshitaasai Karthinarayanan</h4><p>Python and MNE floor support; environment and package troubleshooting; the shared “fixes” document.</p></div>
+      <div class="theme"><span class="tnum">Teaching Assistant</span><h4>Arush Menon</h4><p>MATLAB and EEGLAB setup and floor support; lab-machine plugins (MFFMatlabIO, ICLabel); room and logistics.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">05</span><div><h2>Practical information</h2></div></div>
+    <div class="contact-grid">
+      <div class="reveal"><p>Questions about attending, seats for non-PSYC239 students, or bringing your own dataset for the practice blocks: write to the instructor. Participants are set up at an install clinic on the Thursday before the event; the dataset and a backup are provided on the day.</p></div>
+      <div class="contact-block reveal">
+        <span class="lbl">Date</span>Saturday, 12 September 2026
+        <span class="lbl">Time</span>09:15 arrival · sessions 09:30–17:00
+        <span class="lbl">Venue</span>Computer lab, SIAS, Krea University, Sri City
+        <span class="lbl">Contact</span><a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Computational Cognition Laboratory · SIAS, Krea University · Built with care</footer>
+
+<script>
+  const tog = document.getElementById('navToggle'); const menu = document.getElementById('navMenu');
+  tog.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

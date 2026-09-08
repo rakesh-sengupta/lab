@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Computational Cognition Laboratory · Rakesh Sengupta · Krea University</title>
+<meta name="description" content="The Computational Cognition Laboratory at SIAS, Krea University, led by Dr. Rakesh Sengupta. Research in numerical cognition, visual working memory, recurrent neural network modelling, EEG/BCI, and quantum machine intelligence." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Computational&nbsp;Cognition&nbsp;<b>Lab</b></a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+    <ul id="navMenu">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#people">People</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="bootcamp.html">EEG Bootcamp</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Computational Cognition Laboratory</div>
+        <h1 class="lab">Models of the <em>thinking</em> mind, tested against the brain.</h1>
+        <p class="lede">We build mathematical and computational accounts of how minds perceive number, hold things in memory, track time, process language, and reason — then test them with <strong>psychophysics, EEG, and neural-network modelling</strong>. Based at the School of Interwoven Arts and Sciences, Krea University.</p>
+      </div>
+      <aside class="pi-card">
+        <img class="portrait" src="assets/rakesh.jpg" alt="Dr. Rakesh Sengupta">
+        <h3>Dr. Rakesh Sengupta</h3>
+        <div class="role">Principal Investigator · Assistant Professor</div>
+        <div class="meta">
+          <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+          <a href="https://orcid.org/0000-0003-1768-0551" target="_blank" rel="noopener">ORCID 0000-0003-1768-0551</a>
+          <span>H-index 10 · SIAS, Krea University</span>
+        </div>
+      </aside>
+    </div>
+    <figure class="hero-visual reveal">
+      <img src="assets/ocos_dynamics.png" alt="A six-dot stimulus, the on-centre off-surround connection profile, and the network map holding six bumps after the stimulus is gone.">
+      <figcaption>The lab's workhorse model. Six dots are flashed to an on-centre off-surround recurrent network (OCOS-RNN); each neuron excites its neighbours and inhibits a wider surround. After the stimulus is gone the map holds six self-sustaining bumps, one per dot: a visual sense of number emerging from the dynamics. The same mechanism accounts for working-memory capacity and the subjective expansion of time.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <div><h2>Research Themes</h2></div>
+    </div>
+    <p class="sec-intro reveal">A single mechanistic thread runs through the lab's work: the on-centre off-surround recurrent neural network (OCOS-RNN), a dynamical model whose lateral-inhibition parameter behaves as a shared computational signature across perception, memory, and time.</p>
+
+    <div class="themes reveal">
+      <div class="theme">
+        <img src="assets/theme_numerosity.png" alt="Two dot arrays: four dots and seventeen dots">
+        <span class="tnum">T1</span>
+        <h4>Numerical Cognition &amp; Dyscalculia</h4>
+        <p>Subitizing, estimation, and the neural basis of the approximate number sense; computational phenotyping of numerical ability and dyscalculia screening in Indian school populations with the open <em>DyscalcBattery</em>.</p>
+      </div>
+      <div class="theme">
+        <img src="assets/theme_vwm.png" alt="A memory array of coloured squares and a capacity curve">
+        <span class="tnum">T2</span>
+        <h4>Visual Working Memory &amp; Attention</h4>
+        <p>Capacity limits, feature binding, change detection and the attentional blink, modelled with distance-dependent inhibition and tested with psychophysics and EEG.</p>
+      </div>
+      <div class="theme">
+        <img src="assets/theme_time.png" alt="An oddball in a sequence and the resulting expansion of perceived duration">
+        <span class="tnum">T3</span>
+        <h4>Temporal Cognition</h4>
+        <p>Subjective time, the oddball expansion effect, and serial memory — accounted for through the dynamics of recurrent networks rather than a dedicated clock.</p>
+      </div>
+      <div class="theme">
+        <img src="assets/theme_eeg.png" alt="Scalp topographies of an event-related potential at four latencies">
+        <span class="tnum">T4</span>
+        <h4>EEG &amp; Brain–Computer Interfaces</h4>
+        <p>Covert and overt speech, P300 and SSVEP paradigms, ocular-artifact removal, and source-reconstructed BCI, including assistive interfaces for limited-mobility users. Recorded on the lab's 64-channel EGI system.</p>
+      </div>
+      <div class="theme">
+        <img src="assets/theme_theory.png" alt="Contour plot of an energy function with four attractors">
+        <span class="tnum">T5</span>
+        <h4>Recurrent Network Theory</h4>
+        <p>Energy-function and Hamiltonian formalisms for additive and shunting recurrent networks; stability analysis, oscillatory dynamics, synchronisation, and bio-inspired variance control for neuromorphic systems.</p>
+      </div>
+      <div class="theme">
+        <img src="assets/theme_quantum.png" alt="A Bloch sphere with a state vector">
+        <span class="tnum">T6</span>
+        <h4>Quantum Machine Intelligence</h4>
+        <p>Mapping classical recurrent dynamics into open-system quantum neural networks — Hamiltonian formulations, decoherence, and modular quantum reservoir computing with high noise resilience.</p>
+      </div>
+    </div>
+
+    <div class="infra">
+      <span class="chip"><b>EEG</b> &nbsp;EGI NetStation 64-channel HydroCel system</span>
+      <span class="chip"><b>Compute</b> &nbsp;SIAS HPC cluster</span>
+      <span class="chip"><b>Methods</b> &nbsp;Psychophysics · jsPsych · PsychoPy · MNE · EEGLAB</span>
+      <span class="chip"><b>Modelling</b> &nbsp;OCOS-RNN · QRNN · Nengo</span>
+      <span class="chip"><b>Open tools</b> &nbsp;DyscalcBattery (MIT) · silent_articulation_eeg</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENT ============ -->
+<section id="events">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <div><h2>Training &amp; Events</h2></div>
+    </div>
+    <div class="feature reveal">
+      <img src="assets/bc_erp.png" alt="Butterfly plot of an event-related potential with scalp maps at three latencies">
+      <div class="fbody">
+        <div class="fkick">One-day workshop · PSYC239</div>
+        <h3>EEG Analysis Bootcamp</h3>
+        <div class="fdate">Saturday, 12 September 2026 · 09:15–17:00 · SIAS, Krea University</div>
+        <p>From a raw 64-channel recording to a clean event-related potential, twice: scripted in Python with MNE, then replicated in MATLAB with EEGLAB. Every participant works on a real recording from the lab's covert/overt articulation study and leaves with a notebook, a script, and a Methods paragraph they can defend.</p>
+        <a class="btn" href="bootcamp.html">Programme</a>
+        <a class="btn ghost" href="bootcamp/EEG_Bootcamp_Brochure_12Sep2026.pdf">Brochure (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <div><h2>Publications</h2></div>
+    </div>
+    <p class="sec-intro reveal">Books, articles and chapters from the lab. Full record on <a href="https://orcid.org/0000-0003-1768-0551" target="_blank" rel="noopener">ORCID</a>.</p>
+
+    <h3 style="font-family:'Fraunces',serif;font-size:20px;margin:6px 0 18px;color:var(--ink-soft);font-weight:500;" class="reveal">Books</h3>
+    <div class="booklist reveal">
+      <div class="book">
+        <div class="bt">Introduction to Psychophysics with Python</div>
+        <div class="bd">Rakesh Sengupta &amp; Maganti Madhavilatha · River Publishers, 2026 · ISBN 978-87-438-0944-9</div>
+      </div>
+      <div class="book">
+        <div class="bt">Mind, Model, and Complexity</div>
+        <div class="bd">Rakesh Sengupta · River Publishers, 2026 · In press</div>
+      </div>
+      <div class="book">
+        <div class="bt">Advancing Alzheimer's and Parkinson's Diagnosis and Treatment with Sustainable AI</div>
+        <div class="bd">R. Sengupta, G. R. Naik &amp; U. Desai (Eds.) · Springer Nature, 2026</div>
+      </div>
+      <div class="book">
+        <div class="bt">Applied Artificial Intelligence and Machine Learning Techniques for Engineering Applications</div>
+        <div class="bd">R. Janapati, U. Desai, S. L. Fernandes, R. Sengupta &amp; S. Tayal (Eds.) · CRC Press, 2025</div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Fraunces',serif;font-size:20px;margin:34px 0 18px;color:var(--ink-soft);font-weight:500;" class="reveal">Journal &amp; Conference Articles</h3>
+
+    <div class="pub-filters reveal">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="flagship">Flagship</button>
+      <button data-filter="numerosity">Numerosity</button>
+      <button data-filter="vwm">Memory</button>
+      <button data-filter="time">Time</button>
+      <button data-filter="bci">EEG / BCI</button>
+      <button data-filter="theory">Network Theory</button>
+      <button data-filter="quantum">Quantum</button>
+      <button data-filter="society">Mind &amp; Society</button>
+    </div>
+
+    <div id="pubList"></div>
+  </div>
+</section>
+
+<!-- ============ PEOPLE ============ -->
+<section id="people">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <div><h2>People &amp; Collaborators</h2></div>
+    </div>
+    <p class="sec-intro reveal">The lab works closely with undergraduate and graduate students at Krea and with an international network of collaborators in numerical cognition, vision science, formal linguistics, and quantum information.</p>
+    <div class="themes reveal" style="grid-template-columns:repeat(3,1fr);">
+      <div class="theme">
+        <span class="tnum">PI</span>
+        <h4>Rakesh Sengupta</h4>
+        <p>Principal Investigator. PhD in Cognitive Science, University of Hyderabad (2015). Postdoctoral work at the Centre for Vision Research, York University, and at IIT-Madras; visiting fellow at CIMeC, University of Trento.</p>
+      </div>
+      <div class="theme">
+        <span class="tnum">↔</span>
+        <h4>Long-standing Collaborators</h4>
+        <p>David Melcher &amp; Manuela Piazza (Trento), John K. Tsotsos (York), Surampudi Bapi Raju (IIIT-Hyderabad), Ravichander Janapati &amp; Usha Desai (SR University), Anuj Shukla, Maganti Madhavilatha &amp; Sayantan Mandal (Krea).</p>
+      </div>
+      <div class="theme">
+        <span class="tnum">+</span>
+        <h4>Alumni</h4>
+        <p>Bhavesh Verma (IISER Pune, now co-author on numerosity decoding), Aswini Madhira and Christelle M. Lewis (JRFs, SR University), Srishti Jain and Sumit Pareek (CCT Rajasthan), Adwititya Roy (Krea capstone).</p>
+      </div>
+    </div>
+
+    <h3 class="sub-h reveal" style="margin-top:34px;">Current students &amp; projects</h3>
+    <div class="plist reveal">
+      <div class="p"><b>Lekhana Priya Gundapaneni</b><span>Alpha-band dynamics of covert and overt articulation (EEG); first author of the lab's silent-speech study. Teaching Fellow, EEG Bootcamp.</span></div>
+      <div class="p"><b>Rakshitaasai Karthinarayanan</b><span>Affective modulation of the magnitude system: arousal as competition, valence as drive. Teaching Assistant, EEG Bootcamp.</span></div>
+      <div class="p"><b>Judith Grace Lazarus</b><span>Computational models of misinformation: the asymmetric pull of falsehood in echo chambers.</span></div>
+      <div class="p"><b>Nihala</b><span>PhD (co-supervised): pluralistic ignorance and social network topology.</span></div>
+      <div class="p"><b>Parijat Dey</b><span>Capstone: visual working memory under cognitive load, a complexity-theoretic reframing.</span></div>
+      <div class="p"><b>Bhumika Arora</b><span>Developmental stress, caffeine and numerosity perception (IRB-approved behavioural study).</span></div>
+      <div class="p"><b>Jaimon Paul</b><span>Musical expertise and the subjective expansion of auditory time.</span></div>
+      <div class="p"><b>Almas Sehr</b><span>“Not feeling myself”: acute self-alienation as a complexity-budget overrun.</span></div>
+      <div class="p"><b>Aahana Rath</b><span>Registered Report on visual narrative coherence and the attentional blink.</span></div>
+      <div class="p"><b>Suzanne Lirani</b><span>Directed study: complex contagion, second-person neuroscience and the reverse-inference trap.</span></div>
+      <div class="p"><b>Manvi Yadav</b><span>AI-mediated memory and source-monitoring failure (“Smoothing the Fracture”).</span></div>
+      <div class="p"><b>Arush Menon</b><span>MATLAB/EEGLAB pipelines; Teaching Assistant, EEG Bootcamp.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV / EXPERIENCE ============ -->
+<section id="cv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <div><h2>Curriculum Vitae</h2></div>
+    </div>
+    <p class="sec-intro reveal">Appointments, education, talks, teaching and service. A full CV is available on request.</p>
+    <div class="timeline reveal">
+      <div class="tl-item"><span class="tl-yr">2025 –</span><div><div class="tl-role">Assistant Professor</div><div class="tl-inst">School of Interwoven Arts and Sciences, Krea University, Sri City</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2019 – 2025</span><div><div class="tl-role">Assistant Professor &amp; Director, Center for Creative Cognition</div><div class="tl-inst">SR University, Warangal</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2018</span><div><div class="tl-role">Postdoctoral Researcher</div><div class="tl-inst">Dept. of Biotechnology, IIT-Madras, Chennai</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2015 – 2017</span><div><div class="tl-role">Postdoctoral Researcher</div><div class="tl-inst">Centre for Vision Research, York University, Toronto (with John K. Tsotsos)</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2015</span><div><div class="tl-role">PhD, Cognitive Science</div><div class="tl-inst">University of Hyderabad · advisors Raju S. Bapi and Prajit K. Basu · thesis “Computational and Empirical Investigations of Number, Time, and Memory”</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2012, 2014</span><div><div class="tl-role">Visiting PhD Scholar</div><div class="tl-inst">Center for Mind/Brain Sciences (CIMeC), University of Trento, Italy · Indo-Trento Visiting Research Fellowships</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2009 – 2015</span><div><div class="tl-role">Research Associate &amp; Senior Research Fellow</div><div class="tl-inst">CCNSB, IIIT-Hyderabad · Center for Cognitive Science, BVRIT-Narsapur (DST fellowships)</div></div></div>
+      <div class="tl-item"><span class="tl-yr">2005 – 2008</span><div><div class="tl-role">Junior Research Fellow (CSIR-UGC)</div><div class="tl-inst">School of Chemistry, University of Hyderabad · MSc Chemistry, University of Calcutta (2005); GATE rank 42</div></div></div>
+    </div>
+
+    <div class="twocol reveal">
+      <div>
+        <h4>Recent invited talks</h4>
+        <ul>
+          <li><span class="yr">2026</span>Spurious Specificity: How Attention and Meditation Research Mistakes Description for Cause — Dept. of Philosophy, University of Hyderabad</li>
+          <li><span class="yr">2026</span>Complexity as Constraint: From Visual Binding to the Grammar of Working Memory — EFL University, Hyderabad</li>
+          <li><span class="yr">2024</span>Cognitive Control and Numerosity: Voluntary Control in Go/No-go Tasks — NAOP 2024, GITAM University</li>
+          <li><span class="yr">2024</span>Enumeration and Perceptual Averaging Across Presentation Durations — Cognitive Science Seminar, IIIT Hyderabad</li>
+          <li><span class="yr">2023</span>Recalling a Single Object: Beyond the Capacity Debate — Ahmedabad University</li>
+          <li><span class="yr">2023</span>Time's Subjective Expansion in the Temporal Oddball Paradigm — NGN 2023, IISER Pune</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Teaching</h4>
+        <ul>
+          <li><span class="yr">Krea</span>Programming for Psychologists (PSYC239) · Statistics and Research Methods · Personality Disorders (independent study)</li>
+          <li><span class="yr">SRU</span>Introduction to Computational Methods in Cognitive Neuroscience · Foundations of Cognitive Science · Design Cognition · Cognitive Management · Psychology</li>
+        </ul>
+        <h4 style="margin-top:22px;">Outreach &amp; workshops</h4>
+        <ul>
+          <li><span class="yr">2026</span>EEG Analysis Bootcamp, Krea University (<a href="bootcamp.html">details</a>)</li>
+          <li><span class="yr">2024</span>Designing Dynamic Experiments: a three-day online workshop on psychophysics with MATLAB/Octave</li>
+          <li><span class="yr">2023</span>Five-day FDP: Developments in Healthcare Data Processing</li>
+          <li><span class="yr">2019</span>Firki webinar “What Can Artificial Intelligence Teach Us!” (open educational resource)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="twocol reveal">
+      <div>
+        <h4>Peer review</h4>
+        <p>Cognition · Nature Human Behaviour · IEEE · IJCNN · Frontiers in Neuroscience</p>
+        <h4 style="margin-top:22px;">Memberships</h4>
+        <p>National Academy of Psychology · International Brain Research Organization · American Psychological Association</p>
+      </div>
+      <div>
+        <h4>Advisory &amp; patents</h4>
+        <p>Medical Advisory Board, Emvera (digital health). Co-inventor, “Artificial Intelligence Based Approach to analyze the neurological disorder that erupt during Covid-19 pandemic”, Indian patent application 202211013207 (2022, published).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">06</span>
+      <div><h2>Get in touch</h2></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p>Prospective PhD and master's students, collaborators, and visitors are welcome to write. The lab is interested in motivated researchers across computational neuroscience, psychophysics, and machine intelligence.</p>
+      </div>
+      <div class="contact-block reveal">
+        <span class="lbl">Email</span>
+        <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+        <span class="lbl">ORCID</span>
+        <a href="https://orcid.org/0000-0003-1768-0551" target="_blank" rel="noopener">0000-0003-1768-0551</a>
+        <span class="lbl">Code &amp; data</span>
+        <a href="https://github.com/rakesh-sengupta" target="_blank" rel="noopener">github.com/rakesh-sengupta</a>
+        <span class="lbl">Address</span>
+        SIAS, Krea University<br>Sri City, Andhra Pradesh 517 646, India
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="yr"></span> Computational Cognition Laboratory · SIAS, Krea University · Built with care
+</footer>
+
+<script>
+  /* ---------- publication data (from CV, Sept 2026) ---------- */
+  const pubs = [
+    {y:"2026", cats:["society"], html:'<strong>Rakesh Sengupta.</strong> The Algorithmic Self-fulfilling Prophecy: Stereotype Threat in AI Cognitive Diagnostics. <span class="venue">FACEIT 2026, Learning and Analytics in Intelligent Systems vol. 63</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-29501-9_21" target="_blank" rel="noopener">doi</a>'},
+    {y:"2026", cats:["society","theory"], html:'J. G. Lazarus, L. P. Gundapaneni &amp; <strong>Rakesh Sengupta.</strong> The Asymmetric Pull of Falsehood: A Computational Model of Temporal Narrative Drift in Echo Chambers. <span class="venue">FACEIT 2026, LAIS vol. 63</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-29501-9_20" target="_blank" rel="noopener">doi</a>'},
+    {y:"2026", cats:["quantum","flagship"], html:'<strong>Rakesh Sengupta.</strong> Modular Quantum Recurrent Neural Networks: Scalable Reservoir Computing with High Noise Resilience. <span class="venue">ICSCCC 2026</span>, IEEE, pp. 573–578. <a href="https://doi.org/10.1109/ICSCCC69031.2026.11600184" target="_blank" rel="noopener">doi</a>', tag:"Flagship"},
+    {y:"2026", cats:["vwm","theory"], html:'P. Prasannah &amp; <strong>Rakesh Sengupta.</strong> Modeling Recurrent Neural Networks in Serial Recall Paradigm with Dynamic Self-excitation. <span class="venue">ANTIC 2025, CCIS vol. 2921</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-27117-4_16" target="_blank" rel="noopener">doi</a>'},
+    {y:"2026", cats:["theory"], html:'<strong>Rakesh Sengupta.</strong> Bio-Inspired Variance Control: Decoupling Signaling Mode from Power Constraints in Neuromorphic Systems. <span class="venue">IATMSI 2026</span>, IEEE, pp. 1–6. <a href="https://doi.org/10.1109/IATMSI68868.2026.11465241" target="_blank" rel="noopener">doi</a>'},
+    {y:"2025", cats:["vwm","flagship"], html:'<strong>Rakesh Sengupta.</strong> Modeling visual working memory using recurrent on-center off-surround neural network with distance dependent inhibition. <span class="venue">Scientific Reports</span> 15(1):23000.', tag:"Flagship"},
+    {y:"2025", cats:["quantum","flagship"], html:'<strong>Rakesh Sengupta.</strong> Mapping additive recurrent neural networks to quantum neural networks. <span class="venue">Quantum Information Processing</span> 24(6):185.', tag:"Flagship"},
+    {y:"2025", cats:["theory"], html:'<strong>Rakesh Sengupta.</strong> Synchronization in Hybrid Feedforward-Recurrent Neural Networks with Stochastic Temporal Modulation. <span class="venue">ICICNCT 2025</span>, IEEE, pp. 1–8.'},
+    {y:"2025", cats:["theory"], html:'<strong>Rakesh Sengupta</strong> &amp; U. Desai. Stability Analysis of Recurrent Shunting On-Center Off-Surround Neural Networks with Nonlinear Transfer Functions: An Energy Function Approach. <span class="venue">Applied AI &amp; ML Techniques for Engineering Applications</span>, CRC Press, pp. 124–136.'},
+    {y:"2025", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Brain–computer interface based emotion recognition with error analysis and challenges: an interdisciplinary review. <span class="venue">Discover Applied Sciences</span> 7(8):857.'},
+    {y:"2025", cats:["bci","society"], html:'N. Gudikandula, R. Janapati &amp; <strong>Rakesh Sengupta.</strong> Human–Machine Interactions: Evolution, Current Applications, and Future Prospects. <span class="venue">Humans and Generative AI Tools for Collaborative Intelligence</span>, pp. 343–368.'},
+    {y:"2025", cats:["time","numerosity"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati &amp; B. Verma. Temporal Dynamics of Human Perceptual Averaging Using a Neural Network Model. <span class="venue">SoCPaR 2023, LNNS vol. 1245</span>, Springer.'},
+    {y:"2024", cats:["time","numerosity"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati &amp; B. Verma. Comparative temporal dynamics of individuation and perceptual averaging using a biological neural network model. <span class="venue">International Journal of Hybrid Intelligent Systems</span> 20(2):145–158.'},
+    {y:"2024", cats:["numerosity","theory"], html:'<strong>Rakesh Sengupta.</strong> Exploring Neural Dynamics in a Recurrent On-Center Off-Surround Network: Insights from a Go/No-Go Task Simulation. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–5.'},
+    {y:"2024", cats:["bci"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati, D. H. Krishna &amp; I. A. Pasha. Comparing Visual and Auditory P300-based Brain-Computer Interfaces: An Experimental Study. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–5.'},
+    {y:"2024", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Recent Advancements in Online Ocular Artifacts Removal in EEG based BCI: A Review. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–6.'},
+    {y:"2024", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Automated Electroencephalogram-Based Emotion Detection: A Review. <span class="venue">ICoICI 2024</span>, IEEE, pp. 572–577.'},
+    {y:"2024", cats:["time"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla &amp; R. Janapati. A computational framework for time’s subjective expansion in temporal oddball paradigm using recurrent neural network. <span class="venue">ICACCS 2024</span>, IEEE, pp. 75–80.'},
+    {y:"2024", cats:["theory"], html:'<strong>Rakesh Sengupta</strong>, S. Bapiraju &amp; A. Pattanayak. Exploring emergent properties of recurrent neural networks using novel energy function formalism. <span class="venue">LOD 2023, LNCS vol. 14505</span>, Springer.'},
+    {y:"2024", cats:["vwm","theory"], html:'S. L. S. Vindhya, R. G. Prasanna, <strong>Rakesh Sengupta</strong> &amp; A. Shukla. Modeling Primacy, Recency, and Cued recall in serial memory task using on-center off-surround recurrent neural network. <span class="venue">LOD 2023, LNCS vol. 14505</span>, Springer.'},
+    {y:"2023", cats:["numerosity","flagship"], html:'B. Verma &amp; <strong>Rakesh Sengupta.</strong> Emergence of behavioral phenomena and adaptation effects in human numerosity decoder using recurrent neural networks. <span class="venue">Scientific Reports</span> 13:19571.', tag:"Flagship"},
+    {y:"2023", cats:["vwm","society"], html:'<strong>Rakesh Sengupta</strong>, P. V. R. Rao, A. Prusty, B. M. Jackson &amp; P. V. R. Shekar. Is Deceitful Autobiographical Memory Really Forgotten? <span class="venue">Psychological Reports</span> 128(6):4495–4512.'},
+    {y:"2023", cats:["bci"], html:'R. Janapati, <strong>Rakesh Sengupta</strong> &amp; V. Dalal. Advances in modern EEG-BCI signal processing: A review. <span class="venue">Materials Today: Proceedings</span> 80:2563–2566.'},
+    {y:"2023", cats:["bci"], html:'R. Janapati, V. Dalal, U. Desai, <strong>Rakesh Sengupta</strong>, S. A. Kulkarni &amp; D. J. Hemanth. Classification of Visually Evoked Potential EEG Using Hybrid Anchoring-based PSO-SCG Multi-Layer Perceptron Classifier. <span class="venue">Int. J. on Artificial Intelligence Tools</span> 32:2340016.'},
+    {y:"2023", cats:["society"], html:'R. Archana Reddy, <strong>Rakesh Sengupta</strong>, B. M. Jackson &amp; C. Lewis. Development of a new measure to check attitude towards water conservation. <span class="venue">MethodsX</span> 10:101992.'},
+    {y:"2022", cats:["theory"], html:'<strong>Rakesh Sengupta</strong> &amp; P. V. R. Shekar. Oscillatory dynamics in complex recurrent neural networks. <span class="venue">Biophysical Reviews and Letters</span> 17:75–85.'},
+    {y:"2022", cats:["bci"], html:'R. Janapati, V. Dalal, U. Desai, <strong>Rakesh Sengupta</strong>, P. V. R. Shekar &amp; S. Kollem. Towards a more theory-driven BCI using source reconstructed dynamics of EEG time series. <span class="venue">Nano LIFE</span> 12(2):2250005.'},
+    {y:"2022", cats:["bci"], html:'R. Janapati, V. Dalal &amp; <strong>Rakesh Sengupta.</strong> Advances in Experimental Paradigms for EEG-BCI. <span class="venue">Proc. 2nd Int. Conf. on Recent Trends in Machine Learning, IoT, Smart Cities and Applications, LNNS 237</span>, Springer.'},
+    {y:"2021", cats:["bci"], html:'R. Janapati, V. Dalal, <strong>Rakesh Sengupta</strong> &amp; N. Govardhan. Signal Processing Algorithms Based on Evolutionary Optimization Techniques in the BCI: A Review. <span class="venue">Computational Vision and Bio-Inspired Computing, AISC vol. 1318</span>, Springer.'},
+    {y:"2021", cats:["bci"], html:'R. Janapati, V. Dalal, <strong>Rakesh Sengupta</strong> &amp; P. V. R. Shekar. Progression of EEG-BCI Classification Techniques: A Study. <span class="venue">Inventive Systems and Control, LNNS vol. 204</span>, Springer.'},
+    {y:"2021", cats:["numerosity"], html:'A. Prusty, C. J. Yeh, <strong>Rakesh Sengupta</strong> &amp; A. Miller. Dyscalculia: Difficulties in Making Arithmetical Calculation. <span class="venue">Handbook of Research on Critical Issues in Special Education</span>, IGI Global, pp. 462–485.'},
+    {y:"2018", cats:["time","society"], html:'<strong>Rakesh Sengupta.</strong> How embodied is time? <span class="venue">Journal of the Indian Council of Philosophical Research</span> 35:433–445.'},
+    {y:"2017", cats:["numerosity","flagship"], html:'<strong>Rakesh Sengupta</strong>, B. R. Surampudi &amp; D. Melcher. Big and small numbers: empirical support for a single, flexible mechanism for human numerosity perception. <span class="venue">Attention, Perception, &amp; Psychophysics</span> 79:253–266.', tag:"Flagship"},
+    {y:"2014", cats:["numerosity","theory","flagship"], html:'<strong>Rakesh Sengupta</strong>, B. R. Surampudi &amp; D. Melcher. A visual sense of number emerges from the dynamics of a recurrent on-center off-surround neural network. <span class="venue">Brain Research</span> 1582:114–124.', tag:"Flagship"},
+    {y:"2014", cats:["vwm","numerosity","flagship"], html:'<strong>Rakesh Sengupta</strong>, A. Knops, M. Piazza, E. Eger &amp; D. Melcher. A shared, flexible neural map architecture reflects capacity limits in both visual short-term memory and enumeration. <span class="venue">Journal of Neuroscience</span> 34:9857–9866.', tag:"Flagship"},
+    {y:"2014", cats:["bci"], html:'<strong>Rakesh Sengupta</strong>, D. H. Krishna, I. A. Pasha &amp; T. S. Savithri. Brain Computer Interface for mobility — a case study with an ALS patient. <span class="venue">Int. J. of Applied Engineering Research</span> 9:26055–26070.'}
+  ];
+
+  const list = document.getElementById('pubList');
+  function render(filter){
+    list.innerHTML = "";
+    pubs.filter(p => filter==="all" || p.cats.includes(filter)).forEach(p=>{
+      const tagHtml = p.tag ? `<span class="tag ${p.cats.includes('flagship')?'flagship':''}">${p.tag}</span>` : "";
+      list.insertAdjacentHTML('beforeend',
+        `<div class="pub"><div class="yr">${p.y}</div><div class="body"><p>${p.html}</p>${tagHtml}</div></div>`);
+    });
+  }
+  render("all");
+  document.querySelectorAll('.pub-filters button').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.pub-filters button').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      render(b.dataset.filter);
+    });
+  });
+  const tog = document.getElementById('navToggle');
+  const menu = document.getElementById('navMenu');
+  tog.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
