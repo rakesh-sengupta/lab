@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Networks of People, Places and Symptoms · SNA Bootcamp · 31 Oct – 1 Nov 2026 · Computational Cognition Laboratory, Krea University</title>
+<meta name="description" content="A two-day social network analysis bootcamp at SIAS, Krea University, 31 October and 1 November 2026. Qualitative and quantitative SNA taught entirely by hand — no software, no coding, no prerequisites." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Computational&nbsp;Cognition&nbsp;<b>Lab</b></a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+    <ul id="navMenu">
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a href="index.html#people">People</a></li>
+      <li><a href="index.html#cv">CV</a></li>
+      <li><a href="bootcamp.html">EEG Bootcamp</a></li>
+      <li><a href="sna-bootcamp.html" class="active">SNA Bootcamp</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Two-day bootcamp · Social network analysis</div>
+        <h1>Networks of People, Places and <em>Symptoms</em></h1>
+        <div class="datebadge">Saturday 31 October &amp; Sunday 1 November 2026</div>
+        <p class="lede">Qualitative and quantitative social network analysis, taught entirely <strong>by hand</strong>. No software, no coding, no maths beyond counting, and nothing to install. Two days, six sessions, one argument: the same picture can mean completely different things.</p>
+        <a class="btn" href="#signup" id="heroCta">Sign up</a>
+        <a class="btn ghost" href="bootcamp/SNA_Bootcamp_Brochure_31Oct2026.pdf">Student brochure (PDF)</a>
+      </div>
+      <aside class="pi-card">
+        <h3>At a glance</h3>
+        <div class="meta">
+          <span>SIAS, Krea University, Sri City (room to be confirmed)</span>
+          <span>09:30 – 17:00 both days · 12 contact hours</span>
+          <span>Convenor: Dr. Rakesh Sengupta</span>
+          <span>Support: Judith Grace Lazarus</span>
+          <span>Open to all Krea students · no prerequisites</span>
+          <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+        </div>
+      </aside>
+    </div>
+    <figure class="hero-visual reveal">
+      <img src="assets/sna_ontologies.png" alt="Three network diagrams that look almost identical, labelled observed tie, inferred tie, and estimated association">
+      <figcaption>The claim the bootcamp is built around. Three networks of the same size and roughly the same shape. In the first, a line means two families were married. In the second, a line means historians infer two ports traded. In the third, a line is a partial correlation between two symptoms, estimated from a sample, with a confidence interval usually wide enough to include zero. Nothing in the images tells you which is which.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ SIGN UP ============ -->
+<section id="signup">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>Registration</h2></div></div>
+    <div class="signup-grid reveal">
+      <div>
+        <p class="sec-intro" style="margin-bottom:18px;">Open to all Krea students. No department restriction, no year restriction, no prerequisites. Places are limited by the number of working tables, not by selection. Faculty and staff who want a seat should write directly.</p>
+        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;">The form asks three things: your name, whether you are coming with someone you already know, and whether there is anything we should arrange for you in advance. The third question is optional and goes only to the convenor.</p>
+      </div>
+      <div class="signup-box">
+        <span class="lbl">Registration closes</span>
+        <div class="deadline">Friday 23 October 2026, 23:59 IST</div>
+        <div id="signupSlot">
+          <noscript><a class="btn" href="SIGNUP_FORM_URL_HERE">Open the sign-up form</a></noscript>
+        </div>
+        <div class="countdown" id="countdown"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">02</span><div><h2>What the two days are about</h2></div></div>
+    <p class="sec-intro reveal">Social network analysis is usually taught as a software course. Participants learn to produce a picture before they can say what the picture asserts, and the picture is persuasive out of all proportion to the evidence behind it. This bootcamp inverts that. Every quantity is counted by hand on networks small enough to hold in view, and the analytic work is the argument about what should count as a node and what should count as a tie.</p>
+
+    <div class="themes reveal" style="grid-template-columns:repeat(3,1fr);margin-top:30px;">
+      <div class="theme"><span class="tnum">Day 1</span><h4>What counts as a tie</h4><p>Nodes, ties and the adjacency matrix, built by hand. Sixteen Florentine families worked two different ways. Then your own group maps a small social world it shares, and commits to a sealed prediction about it.</p></div>
+      <div class="theme"><span class="tnum">Overnight</span><h4>The only computation</h4><p>The convenor turns every group's paper sheet into a laid-out diagram with degree and betweenness. That is the only time a computer touches anything all weekend.</p></div>
+      <div class="theme"><span class="tnum">Day 2</span><h4>What structure does</h4><p>Predictions opened against the machine-drawn version. Then the Indian Ocean as a knowledge network, Randall Collins on intellectual lineages, horizons of understanding, and the shift to symptom networks.</p></div>
+    </div>
+
+    <div class="twocol">
+      <div>
+        <h4>By the end, each participant can</h4>
+        <ul>
+          <li>say, for any network diagram, what the nodes are, what the edges assert and how the boundary was drawn;</li>
+          <li>build an adjacency matrix from a verbal description and compute degree, density and path length by hand;</li>
+          <li>explain why two tie rules over the same population give different answers about who is central;</li>
+          <li>tell an observed tie, an inferred tie and an estimated statistical association apart;</li>
+          <li>write a one-page network memo for a problem in their own field.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>What you do not need</h4>
+        <p><b>No laptop.</b> There is no software in this bootcamp at all. <b>No coding</b>, on either day. <b>No maths</b> beyond counting. <b>No reading beforehand</b> — the reading list comes afterwards and is optional. <b>No prior anything</b>: we assume you have never heard the word “node”.</p>
+        <h4 style="margin-top:22px;">Two rules held throughout</h4>
+        <p>Every metric is counted by hand before any machine computes it. And no more than five new terms per session, all of them on a printed glossary card handed out in the first ten minutes. Nothing is taught that is not on that card.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHEDULE ============ -->
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">03</span><div><h2>Schedule</h2></div></div>
+
+    <h3 class="sub-h reveal">Saturday 31 October · Seeing structure</h3>
+    <table class="sched reveal">
+      <tr><th>Time</th><th>Block</th><th>Content</th></tr>
+      <tr><td>09:00</td><td><b>Arrive</b></td><td>Sign in, glossary cards, groups seated. Tea available.</td></tr>
+      <tr><td>09:30</td><td><b>Session 1</b></td><td>What is a network? Nodes, ties, directed and undirected, the adjacency matrix as a table of ticks. Why relational data cannot be anonymised the usual way.</td></tr>
+      <tr><td>11:00</td><td>Tea</td><td></td></tr>
+      <tr><td>11:15</td><td><b>Session 2</b></td><td>Sixteen Florentine families, worked two ways on chart paper. Degree by counting. The loudest session of the weekend.</td></tr>
+      <tr><td>13:00</td><td>Lunch</td><td></td></tr>
+      <tr><td>14:00</td><td><b>Session 3</b></td><td>Your own network. Each group maps a small world it shares, pseudonymised at source, then counts and seals a written prediction.</td></tr>
+      <tr class="hl"><td>16:00</td><td><b>Wrap-up</b></td><td>Glossary review; sheets collected; pseudonym keys destroyed in front of the room.</td></tr>
+    </table>
+
+    <h3 class="sub-h reveal" style="margin-top:40px;">Sunday 1 November · Same mathematics, different worlds</h3>
+    <table class="sched reveal">
+      <tr><th>Time</th><th>Block</th><th>Content</th></tr>
+      <tr><td>09:30</td><td><b>Session 4</b></td><td>Every group's network machine-drawn. Sealed predictions opened first. Bridges, brokers, structural holes and cut vertices, defined once they have seen instances of them.</td></tr>
+      <tr><td>11:00</td><td>Tea</td><td></td></tr>
+      <tr><td>11:15</td><td><b>Session 5</b></td><td>Fourteen Indian Ocean ports. Remove one and the system breaks — which one? Then Randall Collins on teacher–student chains and the law of small numbers.</td></tr>
+      <tr><td>13:00</td><td>Lunch</td><td></td></tr>
+      <tr><td>14:00</td><td><b>Session 6</b></td><td>Horizons of understanding, network closure, and the shift to a third kind of node. Guided demonstration on published symptom networks, with bootstrapped confidence intervals beside the pretty graph.</td></tr>
+      <tr class="hl"><td>16:00</td><td><b>Close</b></td><td>The one-page memo, written in the room. Volunteers present. What we did not teach, named as a door rather than a gap.</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ MATERIAL ============ -->
+<section id="material">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">04</span><div><h2>The material, and what comes out of it</h2></div></div>
+    <p class="sec-intro reveal">Three datasets, chosen so the same counting skill lands on radically different kinds of object. Everything below is worked on paper before anyone sees a computed version.</p>
+    <div class="gallery reveal">
+      <figure class="wide"><img src="assets/sna_medici.png" alt="The Florentine marriage network drawn twice, sized by degree and by betweenness, with the Medici highlighted"><figcaption>Session 2. Sixteen families, marriage ties only. Under degree the Medici lead modestly; under betweenness they dominate, because they sit between clusters that do not otherwise connect. Half the room works this list and half works a second one, and the two halves reach different conclusions about who mattered — which is roughly the shape of the actual historiographical dispute.</figcaption></figure>
+      <figure class="wide"><img src="assets/sna_ocean.png" alt="Fourteen Indian Ocean ports as a network, with Aden and Melaka marked as cut vertices"><figcaption>Session 5. A stylised teaching network of fourteen ports, built for the exercise from general accounts of fourteenth- and fifteenth-century Indian Ocean trade. It is not research data and no metric from it is a historical finding. Its job is to make brokerage countable: Calicut is one of the busiest ports and removing it changes very little, while Aden and Melaka are the two nodes whose removal actually splits the system.</figcaption></figure>
+    </div>
+    <div class="files">
+      <div class="file"><b>Student brochure</b><span>Four pages. Exact timings, what each session asks of you, how loud each room will be, and every opt-out written down in advance.</span><a href="bootcamp/SNA_Bootcamp_Brochure_31Oct2026.pdf">Download PDF</a></div>
+      <div class="file"><b>Full teaching plan</b><span>The convenor's plan document: session-by-session detail, ethics protocol, datasets, worksheets and the overnight processing script.</span><a href="bootcamp/SNA_Bootcamp_Plan_31Oct2026.pdf">Download PDF</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACCESS ============ -->
+<section id="access">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">05</span><div><h2>Access, and how the group work runs</h2></div></div>
+    <div class="twocol reveal" style="margin-top:0;">
+      <div>
+        <h4>The room</h4>
+        <ul>
+          <li><span class="yr">·</span>Leave any session at any time. No need to say why, ask permission, or explain on returning.</li>
+          <li><span class="yr">·</span>A quiet room next door for both days. Nobody will follow you into it.</li>
+          <li><span class="yr">·</span>Breaks are at fixed times and we do not run over into them.</li>
+          <li><span class="yr">·</span>Two sessions are genuinely loud — Saturday and Sunday 11:15, both flagged in the brochure. Bring ear defenders or loops if you use them.</li>
+          <li><span class="yr">·</span>Standard overhead lighting. Say so in advance if that is a problem and we will dim the room or seat you away from it.</li>
+          <li><span class="yr">·</span>Nothing is timed, graded or recorded. There is no test.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Groups, and the data you generate</h4>
+        <p><b>We assign the groups.</b> Three or four people, the same group both days, seated at registration. Tell us on the form if you are coming with someone you know.</p>
+        <p style="margin-top:10px;"><b>You never have to be one of the dots.</b> On Saturday afternoon your group maps a social world. If you would rather not be in it, say so and you still do every other part; this is announced to the whole room so declining is not conspicuous.</p>
+        <p style="margin-top:10px;"><b>The questions are deliberately dull.</b> Only who has studied or worked with whom. Nothing about liking, conflict, money or health. People outside the room appear as A1, A2, A3; real names never leave your table, and the key sheet is destroyed before anything is handed in. Submitted data is deleted within seven days.</p>
+        <p style="margin-top:10px;"><b>Session 6 is announced before it starts.</b> It uses published research on mental health, including personality disorders, as an example of the third kind of edge. Nobody rates themselves or anyone else on anything, and you are free to step out for that part.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">06</span><div><h2>Teaching team</h2></div></div>
+    <div class="themes reveal" style="grid-template-columns:repeat(2,1fr);">
+      <div class="theme" style="display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:start;">
+        <img src="assets/rakesh.jpg" alt="Dr. Rakesh Sengupta" style="margin:0;height:128px;object-fit:cover;">
+        <div><span class="tnum">Convenor</span><h4>Dr. Rakesh Sengupta</h4><p>Assistant Professor, SIAS; Principal Investigator, Computational Cognition Laboratory. Works on network topology in misinformation spread and on complexity accounts of cognition. Teaches all six sessions and runs the overnight processing.</p></div>
+      </div>
+      <div class="theme"><span class="tnum">Support</span><h4>Judith Grace Lazarus</h4><p>Floor support across all hand-work sessions, keeper of the glossary board, and timekeeper. Author of the lab's computational work on temporal narrative drift in echo chambers, which is where the bootcamp's interest in network topology as a cause rather than a description comes from.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">07</span><div><h2>Practical information</h2></div></div>
+    <div class="contact-grid">
+      <div class="reveal"><p>Questions about what a session involves, whether you will be made to speak, whether you can bring a problem from your own discipline, or anything you would like arranged in advance: write to the convenor. Asking before you decide is completely normal and gets a straight answer.</p></div>
+      <div class="contact-block reveal">
+        <span class="lbl">Dates</span>Saturday 31 October &amp; Sunday 1 November 2026
+        <span class="lbl">Time</span>09:00 arrival · sessions 09:30–17:00
+        <span class="lbl">Venue</span>SIAS, Krea University, Sri City
+        <span class="lbl">Registration closes</span>Friday 23 October 2026
+        <span class="lbl">Contact</span><a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Computational Cognition Laboratory · SIAS, Krea University · Built with care</footer>
+
+<script>
+  /* ---------- nav ---------- */
+  const tog = document.getElementById('navToggle'); const menu = document.getElementById('navMenu');
+  tog.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---------- registration window ----------
+     EDIT THIS ONE LINE: paste the Google Form (or other) URL between the quotes.       */
+  const SIGNUP_URL = "SIGNUP_FORM_URL_HERE";
+
+  /* Closes at the end of 23 October 2026, India Standard Time (UTC+05:30). */
+  const CLOSES = new Date("2026-10-23T23:59:59+05:30");
+
+  const slot = document.getElementById('signupSlot');
+  const cd   = document.getElementById('countdown');
+  const cta  = document.getElementById('heroCta');
+  const now  = new Date();
+
+  if (now <= CLOSES) {
+    const ready = SIGNUP_URL && SIGNUP_URL !== "SIGNUP_FORM_URL_HERE";
+    slot.innerHTML = ready
+      ? '<a class="btn" href="' + SIGNUP_URL + '" target="_blank" rel="noopener">Open the sign-up form</a>'
+      : '<span class="btn disabled">Sign-up form opening shortly</span>';
+    const days = Math.ceil((CLOSES - now) / 86400000);
+    cd.textContent = days > 1 ? days + " days left to register."
+                   : days === 1 ? "Last day to register."
+                   : "Registration closes today.";
+  } else {
+    slot.innerHTML = '<span class="btn disabled">Registration closed</span>';
+    cd.textContent = "Registration closed on 23 October 2026. Write to the convenor if you would still like a seat.";
+    if (cta) { cta.textContent = "Registration closed"; cta.classList.add('disabled'); cta.removeAttribute('href'); }
+  }
+</script>
+</body>
+</html>

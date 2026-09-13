@@ -284,3 +284,32 @@
     .gallery,.files,.twocol{grid-template-columns:1fr;}
     .plist{grid-template-columns:1fr;}
   }
+
+  /* ---------- additions: SNA bootcamp, signup, event photos ---------- */
+  .signup-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:44px;align-items:start;margin-top:6px;}
+  .signup-box{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--accent);
+    border-radius:0 3px 3px 0;padding:24px 26px;}
+  .signup-box .lbl{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-soft);display:block;}
+  .signup-box .deadline{font-family:'Fraunces',serif;font-size:22px;font-weight:600;line-height:1.2;margin:6px 0 4px;}
+  .signup-box .btn{margin-top:16px;margin-right:0;}
+  .signup-box .countdown{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--teal);
+    margin-top:14px;line-height:1.6;}
+  .btn.disabled{background:transparent;color:var(--ink-soft);border:1px dashed var(--rule);cursor:default;}
+  .btn.disabled:hover{background:transparent;color:var(--ink-soft);border-color:var(--rule);}
+
+  /* event photographs */
+  .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;}
+  .photos figure{margin:0;background:var(--card);border:1px solid var(--rule);border-radius:3px;padding:10px;}
+  .photos img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border-radius:2px;
+    filter:saturate(.94);}
+  .photos figure.tall img{aspect-ratio:3/4;}
+  .pastbadge{display:inline-block;font-family:'Spline Sans Mono',monospace;font-size:12px;
+    letter-spacing:.06em;text-transform:uppercase;background:var(--teal);color:#fff;
+    padding:7px 12px;border-radius:2px;margin-left:8px;}
+  @media(max-width:820px){
+    .signup-grid{grid-template-columns:1fr;gap:26px;}
+    .photos{grid-template-columns:1fr 1fr;}
+    nav ul.open{max-height:460px;}
+  }
+  @media(max-width:480px){ .photos{grid-template-columns:1fr;} }
