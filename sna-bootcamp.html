@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site.css?v=20260913">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         <h1>Networks of People, Places and <em>Symptoms</em></h1>
         <div class="datebadge">Saturday 31 October &amp; Sunday 1 November 2026</div>
         <p class="lede">Qualitative and quantitative social network analysis, taught entirely <strong>by hand</strong>. No software, no coding, no maths beyond counting, and nothing to install. Two days, six sessions, one argument: the same picture can mean completely different things.</p>
-        <a class="btn" href="#signup" id="heroCta">Sign up</a>
+        <a class="btn" href="#signup" id="heroCta">Register interest</a>
         <a class="btn ghost" href="bootcamp/SNA_Bootcamp_Brochure_31Oct2026.pdf">Student brochure (PDF)</a>
       </div>
       <aside class="pi-card">
@@ -47,6 +47,7 @@
           <span>Convenor: Dr. Rakesh Sengupta</span>
           <span>Support: Judith Grace Lazarus</span>
           <span>Open to all Krea students · no prerequisites</span>
+          <span>Expression of interest · places confirmed by the team</span>
           <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
         </div>
       </aside>
@@ -61,20 +62,121 @@
 <!-- ============ SIGN UP ============ -->
 <section id="signup">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>Registration</h2></div></div>
+    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>Register your interest</h2></div></div>
+
     <div class="signup-grid reveal">
       <div>
-        <p class="sec-intro" style="margin-bottom:18px;">Open to all Krea students. No department restriction, no year restriction, no prerequisites. Places are limited by the number of working tables, not by selection. Faculty and staff who want a seat should write directly.</p>
-        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;">The form asks three things: your name, whether you are coming with someone you already know, and whether there is anything we should arrange for you in advance. The third question is optional and goes only to the convenor.</p>
+        <p class="sec-intro" style="margin-bottom:16px;">This form is an <strong>expression of interest, not a confirmed place</strong>. Because the whole camp runs as hand-work at shared tables, the number of seats is set by the room, and we put the final list together ourselves — balancing disciplines and years, and seating people who already know each other at the same table. We will write to everyone who fills this in, whether or not a seat is available.</p>
+        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;">Open to all Krea students, any department and any year, and to faculty and staff who want a seat. No prerequisites of any kind.</p>
+        <p style="font-size:15px;color:var(--ink-soft);font-weight:300;margin-top:14px;"><b>What happens to what you write here.</b> It reaches Rakesh Sengupta and Judith Grace Lazarus by email and is used only to assemble the participant list and arrange the room. It is not shared further and is deleted after the camp.</p>
       </div>
+
       <div class="signup-box">
-        <span class="lbl">Registration closes</span>
+        <span class="lbl">Interest form closes</span>
         <div class="deadline">Friday 23 October 2026, 23:59 IST</div>
-        <div id="signupSlot">
-          <noscript><a class="btn" href="SIGNUP_FORM_URL_HERE">Open the sign-up form</a></noscript>
-        </div>
         <div class="countdown" id="countdown"></div>
       </div>
+    </div>
+
+    <!-- the form itself -->
+    <div id="formWrap" class="reveal">
+      <form id="interestForm" class="eoi"
+            action="https://formsubmit.co/rakesh.sengupta@krea.edu.in"
+            method="POST">
+
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="SNA Bootcamp — expression of interest">
+        <input type="hidden" name="_cc" value="judith.lazarus@krea.edu.in">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="frow">
+          <label class="fld">
+            <span>Full name <i>required</i></span>
+            <input type="text" name="Name" required autocomplete="name">
+          </label>
+          <label class="fld">
+            <span>Krea email <i>required</i></span>
+            <input type="email" name="Email" required autocomplete="email" placeholder="you@krea.edu.in">
+          </label>
+        </div>
+
+        <fieldset class="fld radios">
+          <legend>I am <i>required</i></legend>
+          <label class="opt"><input type="radio" name="Role" value="Student" required> Student</label>
+          <label class="opt"><input type="radio" name="Role" value="Faculty or staff"> Faculty or staff</label>
+        </fieldset>
+
+        <!-- student-only -->
+        <div id="studentBlock" class="subblock" hidden>
+          <div class="frow">
+            <label class="fld">
+              <span>Year of study</span>
+              <select name="Year of study">
+                <option value="">Select…</option>
+                <option>1st year</option><option>2nd year</option>
+                <option>3rd year</option><option>4th year</option>
+                <option>Postgraduate</option><option>Other</option>
+              </select>
+            </label>
+            <label class="fld">
+              <span>Roll number</span>
+              <input type="text" name="Roll number" autocomplete="off">
+            </label>
+          </div>
+          <div class="frow">
+            <label class="fld">
+              <span>Discipline / programme</span>
+              <input type="text" name="Discipline" placeholder="e.g. Psychology, SIAS">
+            </label>
+            <label class="fld">
+              <span>Major and minor</span>
+              <input type="text" name="Major and minor" placeholder="e.g. Major Psychology, Minor History">
+            </label>
+          </div>
+        </div>
+
+        <!-- faculty-only -->
+        <div id="facultyBlock" class="subblock" hidden>
+          <label class="fld">
+            <span>Department or role</span>
+            <input type="text" name="Department or role">
+          </label>
+        </div>
+
+        <label class="fld">
+          <span>One sentence on why this interests you <i>required</i></span>
+          <textarea name="Why this interests you" rows="3" maxlength="320" required
+            placeholder="One sentence is genuinely enough. We are not marking it."></textarea>
+          <em class="hint"><span id="charCount">0</span>/320</em>
+        </label>
+
+        <label class="fld">
+          <span>Coming with someone you already know? <i>optional</i></span>
+          <input type="text" name="Coming with" placeholder="Their name, so we can seat you at the same table">
+        </label>
+
+        <label class="fld">
+          <span>Anything we should arrange for you in advance? <i>optional</i></span>
+          <textarea name="Anything to arrange" rows="2"
+            placeholder="Seating, lighting, quiet space, anything at all. This goes only to the convenor."></textarea>
+        </label>
+
+        <div class="fsubmit">
+          <button type="submit" class="btn" id="submitBtn">Send expression of interest</button>
+          <span class="fnote">You will get a reply either way. Sending this does not confirm a seat.</span>
+        </div>
+
+        <div id="formMsg" class="fmsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div id="closedBox" class="signup-box" style="display:none;margin-top:10px;">
+      <span class="lbl">Interest form</span>
+      <div class="deadline">Closed</div>
+      <p style="font-size:15px;font-weight:300;margin-top:8px;">The form closed on 23 October 2026. If you would still like a seat, write to
+      <a href="mailto:rakesh.sengupta@krea.edu.in?subject=SNA%20Bootcamp%20%E2%80%94%20late%20interest">rakesh.sengupta@krea.edu.in</a> and we will tell you honestly whether the room has space.</p>
     </div>
   </div>
 </section>
@@ -226,31 +328,70 @@
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* ---------- registration window ----------
-     EDIT THIS ONE LINE: paste the Google Form (or other) URL between the quotes.       */
-  const SIGNUP_URL = "SIGNUP_FORM_URL_HERE";
+  /* ---------- interest form ---------- */
 
   /* Closes at the end of 23 October 2026, India Standard Time (UTC+05:30). */
   const CLOSES = new Date("2026-10-23T23:59:59+05:30");
+  const now    = new Date();
 
-  const slot = document.getElementById('signupSlot');
-  const cd   = document.getElementById('countdown');
-  const cta  = document.getElementById('heroCta');
-  const now  = new Date();
+  const formWrap = document.getElementById('formWrap');
+  const closedBox= document.getElementById('closedBox');
+  const cd       = document.getElementById('countdown');
+  const cta      = document.getElementById('heroCta');
 
-  if (now <= CLOSES) {
-    const ready = SIGNUP_URL && SIGNUP_URL !== "SIGNUP_FORM_URL_HERE";
-    slot.innerHTML = ready
-      ? '<a class="btn" href="' + SIGNUP_URL + '" target="_blank" rel="noopener">Open the sign-up form</a>'
-      : '<span class="btn disabled">Sign-up form opening shortly</span>';
-    const days = Math.ceil((CLOSES - now) / 86400000);
-    cd.textContent = days > 1 ? days + " days left to register."
-                   : days === 1 ? "Last day to register."
-                   : "Registration closes today.";
-  } else {
-    slot.innerHTML = '<span class="btn disabled">Registration closed</span>';
-    cd.textContent = "Registration closed on 23 October 2026. Write to the convenor if you would still like a seat.";
+  if (now > CLOSES) {
+    formWrap.style.display = 'none';
+    closedBox.style.display = 'block';
+    cd.textContent = "Closed on 23 October 2026.";
     if (cta) { cta.textContent = "Registration closed"; cta.classList.add('disabled'); cta.removeAttribute('href'); }
+  } else {
+    const days = Math.ceil((CLOSES - now) / 86400000);
+    cd.textContent = days > 1 ? days + " days left." : days === 1 ? "Last day." : "Closes today.";
+
+    const form   = document.getElementById('interestForm');
+    const stu    = document.getElementById('studentBlock');
+    const fac    = document.getElementById('facultyBlock');
+    const msg    = document.getElementById('formMsg');
+    const btn    = document.getElementById('submitBtn');
+    const ta     = form.querySelector('textarea[name="Why this interests you"]');
+    const count  = document.getElementById('charCount');
+
+    /* show the right block, and only require fields that are visible */
+    function setRole(v){
+      const isStudent = v === 'Student';
+      const isFaculty = v === 'Faculty or staff';
+      stu.hidden = !isStudent;
+      fac.hidden = !isFaculty;
+      stu.querySelectorAll('input,select').forEach(el => { el.disabled = !isStudent; });
+      fac.querySelectorAll('input,select').forEach(el => { el.disabled = !isFaculty; });
+    }
+    setRole(null);
+    form.querySelectorAll('input[name="Role"]').forEach(r =>
+      r.addEventListener('change', e => setRole(e.target.value)));
+
+    ta.addEventListener('input', () => { count.textContent = ta.value.length; });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      btn.disabled = true; btn.textContent = 'Sending…';
+      msg.className = 'fmsg'; msg.textContent = '';
+      try {
+        const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        form.style.display = 'none';
+        msg.className = 'fmsg ok';
+        msg.innerHTML = '<b>Thank you — that has reached us.</b><br>This is an expression of interest, not a confirmed seat. We will write to you either way once the list is settled, before the end of October.';
+      } catch (err) {
+        btn.disabled = false; btn.textContent = 'Send expression of interest';
+        msg.className = 'fmsg bad';
+        msg.innerHTML = 'Something went wrong sending that. Please email <a href="mailto:rakesh.sengupta@krea.edu.in?subject=SNA%20Bootcamp%20%E2%80%94%20interest">rakesh.sengupta@krea.edu.in</a> directly and we will add you by hand.';
+      }
+    });
   }
 </script>
 </body>
