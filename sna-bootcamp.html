@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css?v=20260913">
+<link rel="stylesheet" href="site.css?v=20260917">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         <h1>Networks of People, Places and <em>Symptoms</em></h1>
         <div class="datebadge">Saturday 31 October &amp; Sunday 1 November 2026</div>
         <p class="lede">Qualitative and quantitative social network analysis, taught entirely <strong>by hand</strong>. No software, no coding, no maths beyond counting, and nothing to install. Two days, six sessions, one argument: the same picture can mean completely different things.</p>
-        <a class="btn" href="#signup" id="heroCta">Register interest</a>
+        <a class="btn ghost" href="#signup" id="heroCta">Registration full — contact us</a>
         <a class="btn ghost" href="bootcamp/SNA_Bootcamp_Brochure_31Oct2026.pdf">Student brochure (PDF)</a>
       </div>
       <aside class="pi-card">
@@ -47,7 +47,7 @@
           <span>Convenor: Dr. Rakesh Sengupta</span>
           <span>Support: Judith Grace Lazarus</span>
           <span>Open to all Krea students · no prerequisites</span>
-          <span>Expression of interest · places confirmed by the team</span>
+          <span>Capacity reached · waiting list by email only</span>
           <a href="mailto:rakesh.sengupta@krea.edu.in">rakesh.sengupta@krea.edu.in</a>
         </div>
       </aside>
@@ -62,18 +62,23 @@
 <!-- ============ SIGN UP ============ -->
 <section id="signup">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>Register your interest</h2></div></div>
+    <div class="sec-head reveal"><span class="sec-num">01</span><div><h2>Registration</h2></div></div>
 
     <div class="signup-grid reveal">
       <div>
-        <p class="sec-intro" style="margin-bottom:16px;">This form is an <strong>expression of interest, not a confirmed place</strong>. Because the whole camp runs as hand-work at shared tables, the number of seats is set by the room, and we put the final list together ourselves — balancing disciplines and years, and seating people who already know each other at the same table. We will write to everyone who fills this in, whether or not a seat is available.</p>
-        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;">Open to all Krea students, any department and any year, and to faculty and staff who want a seat. No prerequisites of any kind.</p>
-        <p style="font-size:15px;color:var(--ink-soft);font-weight:300;margin-top:14px;"><b>What happens to what you write here.</b> It reaches Rakesh Sengupta and Judith Grace Lazarus by email and is used only to assemble the participant list and arrange the room. It is not shared further and is deleted after the camp.</p>
+        <p class="sec-intro" style="margin-bottom:16px;"><strong>The camp is full.</strong> We have as many registrations as the room and the format can take. Because every session is hand-work at shared tables of three or four, capacity is set by the number of tables rather than by seats, and we have reached it.</p>
+        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;">If you would still like to come, write to either of us. We keep a short waiting list and people do drop out, particularly the week before. We will tell you honestly where you stand rather than leave you guessing.</p>
+        <p style="font-size:16px;color:var(--ink-soft);font-weight:300;margin-top:14px;">If the response stays this strong we will run the camp again next term. Say so in your email and we will write to you first when dates are set.</p>
       </div>
 
       <div class="signup-box">
-        <span class="lbl">Interest form closes</span>
-        <div class="deadline">Friday 23 October 2026, 23:59 IST</div>
+        <span class="lbl">Status</span>
+        <div class="deadline">Capacity reached</div>
+        <p style="font-size:15px;font-weight:300;margin:10px 0 0;">Registrations are closed. Waiting list and enquiries by email.</p>
+        <div class="contact-pair">
+          <a href="mailto:rakesh.sengupta@krea.edu.in?subject=SNA%20Bootcamp%20%E2%80%94%20waiting%20list">rakesh.sengupta@krea.edu.in</a>
+          <a href="mailto:judith.lazarus@krea.edu.in?subject=SNA%20Bootcamp%20%E2%80%94%20waiting%20list">judith.lazarus@krea.edu.in</a>
+        </div>
         <div class="countdown" id="countdown"></div>
       </div>
     </div>
@@ -86,7 +91,7 @@
 
         <!-- FormSubmit configuration -->
         <input type="hidden" name="_subject" value="SNA Bootcamp — expression of interest">
-        <input type="hidden" name="_cc" value="judith.grace@krea.edu.in">
+        <input type="hidden" name="_cc" value="judith.lazarus@krea.edu.in">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -330,6 +335,10 @@
 
   /* ---------- interest form ---------- */
 
+  /* Set to false to re-open the form (e.g. if seats free up or the camp runs again).
+     The whole form is still in the page below; this flag just hides it.            */
+  const CAPACITY_FULL = true;
+
   /* Closes at the end of 23 October 2026, India Standard Time (UTC+05:30). */
   const CLOSES = new Date("2026-10-23T23:59:59+05:30");
   const now    = new Date();
@@ -339,7 +348,11 @@
   const cd       = document.getElementById('countdown');
   const cta      = document.getElementById('heroCta');
 
-  if (now > CLOSES) {
+  if (CAPACITY_FULL) {
+    formWrap.style.display  = 'none';
+    closedBox.style.display = 'none';
+    cd.textContent = '';
+  } else if (now > CLOSES) {
     formWrap.style.display = 'none';
     closedBox.style.display = 'block';
     cd.textContent = "Closed on 23 October 2026.";
