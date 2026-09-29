@@ -157,24 +157,7 @@
     <p class="sec-intro reveal">Books, articles and chapters from the lab. Full record on <a href="https://orcid.org/0000-0003-1768-0551" target="_blank" rel="noopener">ORCID</a>.</p>
 
     <h3 style="font-family:'Fraunces',serif;font-size:20px;margin:6px 0 18px;color:var(--ink-soft);font-weight:500;" class="reveal">Books</h3>
-    <div class="booklist reveal">
-      <div class="book">
-        <div class="bt">Introduction to Psychophysics with Python</div>
-        <div class="bd">Rakesh Sengupta &amp; Maganti Madhavilatha · River Publishers, 2026 · ISBN 978-87-438-0944-9</div>
-      </div>
-      <div class="book">
-        <div class="bt">Mind, Model, and Complexity</div>
-        <div class="bd">Rakesh Sengupta · River Publishers, 2026 · In press</div>
-      </div>
-      <div class="book">
-        <div class="bt">Advancing Alzheimer's and Parkinson's Diagnosis and Treatment with Sustainable AI</div>
-        <div class="bd">R. Sengupta, G. R. Naik &amp; U. Desai (Eds.) · Springer Nature, 2026</div>
-      </div>
-      <div class="book">
-        <div class="bt">Applied Artificial Intelligence and Machine Learning Techniques for Engineering Applications</div>
-        <div class="bd">R. Janapati, U. Desai, S. L. Fernandes, R. Sengupta &amp; S. Tayal (Eds.) · CRC Press, 2025</div>
-      </div>
-    </div>
+    <div class="booklist reveal" id="bookList"></div>
 
     <h3 style="font-family:'Fraunces',serif;font-size:20px;margin:34px 0 18px;color:var(--ink-soft);font-weight:500;" class="reveal">Journal &amp; Conference Articles</h3>
 
@@ -347,57 +330,85 @@
 </footer>
 
 <script>
-  /* ---------- publication data (from CV, Sept 2026) ---------- */
-  const pubs = [
-{y:"2027", cats:["numerosity","theory"], html:'<strong>Rakesh Sengupta.</strong> Long-Range Temporal Correlations in Enumeration: A Theoretical Link from On-Center Off-Surround Recurrent Dynamics to DFA of Reaction Times. <span class="venue">ComSIA 2026, LNNS vol. 2058</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-31170-2_10" target="_blank" rel="noopener">doi</a>'},
-    {y:"2026", cats:["society"], html:'<strong>Rakesh Sengupta.</strong> The Algorithmic Self-fulfilling Prophecy: Stereotype Threat in AI Cognitive Diagnostics. <span class="venue">FACEIT 2026, Learning and Analytics in Intelligent Systems vol. 63</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-29501-9_21" target="_blank" rel="noopener">doi</a>'},
-    {y:"2026", cats:["society","theory"], html:'J. G. Lazarus, L. P. Gundapaneni &amp; <strong>Rakesh Sengupta.</strong> The Asymmetric Pull of Falsehood: A Computational Model of Temporal Narrative Drift in Echo Chambers. <span class="venue">FACEIT 2026, LAIS vol. 63</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-29501-9_20" target="_blank" rel="noopener">doi</a>'},
-    {y:"2026", cats:["quantum","flagship"], html:'<strong>Rakesh Sengupta.</strong> Modular Quantum Recurrent Neural Networks: Scalable Reservoir Computing with High Noise Resilience. <span class="venue">ICSCCC 2026</span>, IEEE, pp. 573–578. <a href="https://doi.org/10.1109/ICSCCC69031.2026.11600184" target="_blank" rel="noopener">doi</a>', tag:"Flagship"},
-    {y:"2026", cats:["vwm","theory"], html:'P. Prasannah &amp; <strong>Rakesh Sengupta.</strong> Modeling Recurrent Neural Networks in Serial Recall Paradigm with Dynamic Self-excitation. <span class="venue">ANTIC 2025, CCIS vol. 2921</span>, Springer. <a href="https://doi.org/10.1007/978-3-032-27117-4_16" target="_blank" rel="noopener">doi</a>'},
-    {y:"2026", cats:["theory"], html:'<strong>Rakesh Sengupta.</strong> Bio-Inspired Variance Control: Decoupling Signaling Mode from Power Constraints in Neuromorphic Systems. <span class="venue">IATMSI 2026</span>, IEEE, pp. 1–6. <a href="https://doi.org/10.1109/IATMSI68868.2026.11465241" target="_blank" rel="noopener">doi</a>'},
-    {y:"2025", cats:["vwm","flagship"], html:'<strong>Rakesh Sengupta.</strong> Modeling visual working memory using recurrent on-center off-surround neural network with distance dependent inhibition. <span class="venue">Scientific Reports</span> 15(1):23000.', tag:"Flagship"},
-    {y:"2025", cats:["quantum","flagship"], html:'<strong>Rakesh Sengupta.</strong> Mapping additive recurrent neural networks to quantum neural networks. <span class="venue">Quantum Information Processing</span> 24(6):185.', tag:"Flagship"},
-    {y:"2025", cats:["theory"], html:'<strong>Rakesh Sengupta.</strong> Synchronization in Hybrid Feedforward-Recurrent Neural Networks with Stochastic Temporal Modulation. <span class="venue">ICICNCT 2025</span>, IEEE, pp. 1–8.'},
-    {y:"2025", cats:["theory"], html:'<strong>Rakesh Sengupta</strong> &amp; U. Desai. Stability Analysis of Recurrent Shunting On-Center Off-Surround Neural Networks with Nonlinear Transfer Functions: An Energy Function Approach. <span class="venue">Applied AI &amp; ML Techniques for Engineering Applications</span>, CRC Press, pp. 124–136.'},
-    {y:"2025", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Brain–computer interface based emotion recognition with error analysis and challenges: an interdisciplinary review. <span class="venue">Discover Applied Sciences</span> 7(8):857.'},
-    {y:"2025", cats:["bci","society"], html:'N. Gudikandula, R. Janapati &amp; <strong>Rakesh Sengupta.</strong> Human–Machine Interactions: Evolution, Current Applications, and Future Prospects. <span class="venue">Humans and Generative AI Tools for Collaborative Intelligence</span>, pp. 343–368.'},
-    {y:"2025", cats:["time","numerosity"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati &amp; B. Verma. Temporal Dynamics of Human Perceptual Averaging Using a Neural Network Model. <span class="venue">SoCPaR 2023, LNNS vol. 1245</span>, Springer.'},
-    {y:"2024", cats:["time","numerosity"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati &amp; B. Verma. Comparative temporal dynamics of individuation and perceptual averaging using a biological neural network model. <span class="venue">International Journal of Hybrid Intelligent Systems</span> 20(2):145–158.'},
-    {y:"2024", cats:["numerosity","theory"], html:'<strong>Rakesh Sengupta.</strong> Exploring Neural Dynamics in a Recurrent On-Center Off-Surround Network: Insights from a Go/No-Go Task Simulation. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–5.'},
-    {y:"2024", cats:["bci"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla, R. Janapati, D. H. Krishna &amp; I. A. Pasha. Comparing Visual and Auditory P300-based Brain-Computer Interfaces: An Experimental Study. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–5.'},
-    {y:"2024", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Recent Advancements in Online Ocular Artifacts Removal in EEG based BCI: A Review. <span class="venue">ICCCNT 2024</span>, IEEE, pp. 1–6.'},
-    {y:"2024", cats:["bci"], html:'N. Gudikandula, R. Janapati, <strong>Rakesh Sengupta</strong> &amp; S. Chintala. Automated Electroencephalogram-Based Emotion Detection: A Review. <span class="venue">ICoICI 2024</span>, IEEE, pp. 572–577.'},
-    {y:"2024", cats:["time"], html:'<strong>Rakesh Sengupta</strong>, A. Shukla &amp; R. Janapati. A computational framework for time’s subjective expansion in temporal oddball paradigm using recurrent neural network. <span class="venue">ICACCS 2024</span>, IEEE, pp. 75–80.'},
-    {y:"2024", cats:["theory"], html:'<strong>Rakesh Sengupta</strong>, S. Bapiraju &amp; A. Pattanayak. Exploring emergent properties of recurrent neural networks using novel energy function formalism. <span class="venue">LOD 2023, LNCS vol. 14505</span>, Springer.'},
-    {y:"2024", cats:["vwm","theory"], html:'S. L. S. Vindhya, R. G. Prasanna, <strong>Rakesh Sengupta</strong> &amp; A. Shukla. Modeling Primacy, Recency, and Cued recall in serial memory task using on-center off-surround recurrent neural network. <span class="venue">LOD 2023, LNCS vol. 14505</span>, Springer.'},
-    {y:"2023", cats:["numerosity","flagship"], html:'B. Verma &amp; <strong>Rakesh Sengupta.</strong> Emergence of behavioral phenomena and adaptation effects in human numerosity decoder using recurrent neural networks. <span class="venue">Scientific Reports</span> 13:19571.', tag:"Flagship"},
-    {y:"2023", cats:["vwm","society"], html:'<strong>Rakesh Sengupta</strong>, P. V. R. Rao, A. Prusty, B. M. Jackson &amp; P. V. R. Shekar. Is Deceitful Autobiographical Memory Really Forgotten? <span class="venue">Psychological Reports</span> 128(6):4495–4512.'},
-    {y:"2023", cats:["bci"], html:'R. Janapati, <strong>Rakesh Sengupta</strong> &amp; V. Dalal. Advances in modern EEG-BCI signal processing: A review. <span class="venue">Materials Today: Proceedings</span> 80:2563–2566.'},
-    {y:"2023", cats:["bci"], html:'R. Janapati, V. Dalal, U. Desai, <strong>Rakesh Sengupta</strong>, S. A. Kulkarni &amp; D. J. Hemanth. Classification of Visually Evoked Potential EEG Using Hybrid Anchoring-based PSO-SCG Multi-Layer Perceptron Classifier. <span class="venue">Int. J. on Artificial Intelligence Tools</span> 32:2340016.'},
-    {y:"2023", cats:["society"], html:'R. Archana Reddy, <strong>Rakesh Sengupta</strong>, B. M. Jackson &amp; C. Lewis. Development of a new measure to check attitude towards water conservation. <span class="venue">MethodsX</span> 10:101992.'},
-    {y:"2022", cats:["theory"], html:'<strong>Rakesh Sengupta</strong> &amp; P. V. R. Shekar. Oscillatory dynamics in complex recurrent neural networks. <span class="venue">Biophysical Reviews and Letters</span> 17:75–85.'},
-    {y:"2022", cats:["bci"], html:'R. Janapati, V. Dalal, U. Desai, <strong>Rakesh Sengupta</strong>, P. V. R. Shekar &amp; S. Kollem. Towards a more theory-driven BCI using source reconstructed dynamics of EEG time series. <span class="venue">Nano LIFE</span> 12(2):2250005.'},
-    {y:"2022", cats:["bci"], html:'R. Janapati, V. Dalal &amp; <strong>Rakesh Sengupta.</strong> Advances in Experimental Paradigms for EEG-BCI. <span class="venue">Proc. 2nd Int. Conf. on Recent Trends in Machine Learning, IoT, Smart Cities and Applications, LNNS 237</span>, Springer.'},
-    {y:"2021", cats:["bci"], html:'R. Janapati, V. Dalal, <strong>Rakesh Sengupta</strong> &amp; N. Govardhan. Signal Processing Algorithms Based on Evolutionary Optimization Techniques in the BCI: A Review. <span class="venue">Computational Vision and Bio-Inspired Computing, AISC vol. 1318</span>, Springer.'},
-    {y:"2021", cats:["bci"], html:'R. Janapati, V. Dalal, <strong>Rakesh Sengupta</strong> &amp; P. V. R. Shekar. Progression of EEG-BCI Classification Techniques: A Study. <span class="venue">Inventive Systems and Control, LNNS vol. 204</span>, Springer.'},
-    {y:"2021", cats:["numerosity"], html:'A. Prusty, C. J. Yeh, <strong>Rakesh Sengupta</strong> &amp; A. Miller. Dyscalculia: Difficulties in Making Arithmetical Calculation. <span class="venue">Handbook of Research on Critical Issues in Special Education</span>, IGI Global, pp. 462–485.'},
-    {y:"2018", cats:["time","society"], html:'<strong>Rakesh Sengupta.</strong> How embodied is time? <span class="venue">Journal of the Indian Council of Philosophical Research</span> 35:433–445.'},
-    {y:"2017", cats:["numerosity","flagship"], html:'<strong>Rakesh Sengupta</strong>, B. R. Surampudi &amp; D. Melcher. Big and small numbers: empirical support for a single, flexible mechanism for human numerosity perception. <span class="venue">Attention, Perception, &amp; Psychophysics</span> 79:253–266.', tag:"Flagship"},
-    {y:"2014", cats:["numerosity","theory","flagship"], html:'<strong>Rakesh Sengupta</strong>, B. R. Surampudi &amp; D. Melcher. A visual sense of number emerges from the dynamics of a recurrent on-center off-surround neural network. <span class="venue">Brain Research</span> 1582:114–124.', tag:"Flagship"},
-    {y:"2014", cats:["vwm","numerosity","flagship"], html:'<strong>Rakesh Sengupta</strong>, A. Knops, M. Piazza, E. Eger &amp; D. Melcher. A shared, flexible neural map architecture reflects capacity limits in both visual short-term memory and enumeration. <span class="venue">Journal of Neuroscience</span> 34:9857–9866.', tag:"Flagship"},
-    {y:"2014", cats:["bci"], html:'<strong>Rakesh Sengupta</strong>, D. H. Krishna, I. A. Pasha &amp; T. S. Savithri. Brain Computer Interface for mobility — a case study with an ALS patient. <span class="venue">Int. J. of Applied Engineering Research</span> 9:26055–26070.'}
-  ];
+  /* ---------- publications: loaded from data/publications.json ----------
+     That file is the single source for this page and for the CV.
+     Update it with tools/labpub (labpub add <DOI>; labpub push).            */
+  const ME = ["R. Sengupta", "Rakesh Sengupta"];
+  const esc = s => String(s ?? "").replace(/[&<>"']/g,
+      c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
 
+  function names(list){
+    const a = (list || []).map(x => ME.includes(x.trim()) ? "<strong>Rakesh Sengupta</strong>" : esc(x));
+    if (a.length <= 1) return a.join("");
+    return a.slice(0, -1).join(", ") + " &amp; " + a[a.length - 1];
+  }
+  function venue(p){
+    const pp = p.pages ? ", pp. " + esc(p.pages) : "";
+    if (p.type === "journal"){
+      if (!p.venue) return "";
+      let v = '<span class="venue">' + esc(p.venue) + "</span>";
+      if (p.volume) v += " " + esc(p.volume);
+      if (p.issue)  v += "(" + esc(p.issue) + ")";
+      if (p.pages)  v += (p.volume ? ":" : " ") + esc(p.pages);
+      return v + ".";
+    }
+    if (p.type === "proceedings"){
+      let v = esc(p.venue || "");
+      if (p.series) v += ", " + esc(p.series);
+      if (p.volume) v += " vol. " + esc(p.volume);
+      return '<span class="venue">' + v + "</span>" + (p.publisher ? ", " + esc(p.publisher) : "") + pp + ".";
+    }
+    if (p.type === "chapter" && p.book){
+      return 'In <span class="venue">' + esc(p.book) + "</span>" + (p.publisher ? ", " + esc(p.publisher) : "") + pp + ".";
+    }
+    return "";
+  }
+  function pubHtml(p){
+    const t = esc(p.title) + (/[?!]$/.test(p.title || "") ? "" : ".");
+    const doi = p.doi ? ' <a href="https://doi.org/' + encodeURI(p.doi) + '" target="_blank" rel="noopener">doi</a>' : "";
+    return names(p.authors) + ". " + t + " " + venue(p) + doi;
+  }
+  function bookHtml(p){
+    const who = names(p.authors) + (p.type === "edited" ? " (Eds.)" : "");
+    const when = p.status ? cap(p.status) : p.year;
+    const extra = p.isbn ? " · ISBN " + esc(p.isbn) : "";
+    return '<div class="book"><div class="bt">' + esc(p.title) + '</div><div class="bd">' +
+           who + " · " + esc(p.publisher || "") + ", " + esc(when) + extra + "</div></div>";
+  }
+
+  let pubs = [];
   const list = document.getElementById('pubList');
+  const bookList = document.getElementById('bookList');
+
   function render(filter){
     list.innerHTML = "";
-    pubs.filter(p => filter==="all" || p.cats.includes(filter)).forEach(p=>{
-      const tagHtml = p.tag ? `<span class="tag ${p.cats.includes('flagship')?'flagship':''}">${p.tag}</span>` : "";
-      list.insertAdjacentHTML('beforeend',
-        `<div class="pub"><div class="yr">${p.y}</div><div class="body"><p>${p.html}</p>${tagHtml}</div></div>`);
-    });
+    pubs.filter(p => filter === "all" || (filter === "flagship" ? p.flagship : (p.cats || []).includes(filter)))
+        .forEach(p => {
+          const tag = p.flagship ? '<span class="tag flagship">Flagship</span>' : "";
+          const yr = p.status ? cap(p.status) : p.year;
+          list.insertAdjacentHTML('beforeend',
+            `<div class="pub"><div class="yr">${esc(yr)}</div><div class="body"><p>${pubHtml(p)}</p>${tag}</div></div>`);
+        });
   }
-  render("all");
+
+  fetch("data/publications.json", {cache: "no-cache"})
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(db => {
+      const all = (db.publications || []).filter(p => p.web !== false);
+      bookList.innerHTML = all.filter(p => p.type === "book" || p.type === "edited").map(bookHtml).join("");
+      // newest first; "in press" items lead; JSON order breaks ties
+      pubs = all.filter(p => p.type !== "book" && p.type !== "edited")
+                .map((p, i) => ({p, i}))
+                .sort((a, b) => ((b.p.status ? 1e4 : 0) + (b.p.year || 0)) - ((a.p.status ? 1e4 : 0) + (a.p.year || 0)) || a.i - b.i)
+                .map(x => x.p);
+      render("all");
+    })
+    .catch(() => {
+      list.innerHTML = '<p class="sec-intro">The publication list could not be loaded here. ' +
+        'The full record is on <a href="https://orcid.org/0000-0003-1768-0551" target="_blank" rel="noopener">ORCID</a>.</p>';
+    });
+
   document.querySelectorAll('.pub-filters button').forEach(b=>{
     b.addEventListener('click',()=>{
       document.querySelectorAll('.pub-filters button').forEach(x=>x.classList.remove('active'));
@@ -405,6 +416,7 @@
       render(b.dataset.filter);
     });
   });
+
   const tog = document.getElementById('navToggle');
   const menu = document.getElementById('navMenu');
   tog.addEventListener('click',()=>menu.classList.toggle('open'));

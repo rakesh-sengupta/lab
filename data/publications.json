@@ -1,0 +1,895 @@
+{
+  "schema": 1,
+  "_about": "Single source for the website publication list and the CV. Edit with tools/labpub, or by hand and run `labpub check`.",
+  "publications": [
+    {
+      "id": "sengupta2026mind",
+      "type": "book",
+      "year": 2026,
+      "status": "in press",
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Mind, Model, and Complexity",
+      "publisher": "River Publishers",
+      "cats": [],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2026introduction",
+      "type": "book",
+      "year": 2026,
+      "authors": [
+        "R. Sengupta",
+        "M. Madhavilatha"
+      ],
+      "title": "Introduction to Psychophysics with Python",
+      "publisher": "River Publishers",
+      "isbn": "978-87-438-0944-9",
+      "cats": [],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2026advancing",
+      "type": "edited",
+      "year": 2026,
+      "authors": [
+        "R. Sengupta",
+        "G. R. Naik",
+        "U. Desai"
+      ],
+      "title": "Advancing Alzheimer's and Parkinson's Diagnosis and Treatment with Sustainable AI",
+      "publisher": "Springer Nature",
+      "cats": [],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2025applied",
+      "type": "edited",
+      "year": 2025,
+      "authors": [
+        "R. Janapati",
+        "U. Desai",
+        "S. L. Fernandes",
+        "R. Sengupta",
+        "S. Tayal"
+      ],
+      "title": "Applied Artificial Intelligence and Machine Learning Techniques for Engineering Applications",
+      "publisher": "CRC Press",
+      "cats": [],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2027asymmetry",
+      "type": "book",
+      "status": "under contract",
+      "authors": [
+        "R. Sengupta",
+        "J. G. Lazarus"
+      ],
+      "title": "Asymmetry of Truth",
+      "publisher": "River Publishers",
+      "cats": [],
+      "flagship": false,
+      "web": false,
+      "cv_section": "press"
+    },
+    {
+      "id": "sengupta2027machine",
+      "type": "chapter",
+      "status": "chapter proposal accepted",
+      "authors": [
+        "R. Sengupta",
+        "A. Rath"
+      ],
+      "title": "The machine does not blink: Tractability, suppression, and the embodied difference between human and machine vision",
+      "book": "Visual Culture at the Intersection of Human and Machine Vision",
+      "editors": [
+        "N. Son"
+      ],
+      "publisher": "IGI Global",
+      "cats": [],
+      "flagship": false,
+      "web": false
+    },
+    {
+      "id": "sengupta2027deus",
+      "type": "chapter",
+      "status": "accepted",
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Deus sive Discursus: A Spinozist critique of epistemic fracture and reactionary co-option",
+      "cats": [],
+      "flagship": false,
+      "web": false,
+      "note": "TODO: add the volume title, editors and publisher"
+    },
+    {
+      "id": "sengupta2026eventalization",
+      "type": "journal",
+      "year": 2026,
+      "status": "in press",
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "The eventalization of time: From neural magnitude to temporal capital",
+      "venue": "Time & Society",
+      "cats": [
+        "time",
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "gundapaneni2026alpha",
+      "type": "journal",
+      "year": 2026,
+      "status": "in press",
+      "authors": [
+        "L. P. Gundapaneni",
+        "R. Sengupta",
+        "S. Mandal",
+        "M. Maganti"
+      ],
+      "title": "Alpha band power modulation during covert and overt articulation",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": false,
+      "note": "TODO: add the journal name"
+    },
+    {
+      "id": "sengupta2025modeling",
+      "type": "journal",
+      "year": 2025,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Modeling visual working memory using recurrent on-center off-surround neural network with distance dependent inhibition",
+      "venue": "Scientific Reports",
+      "volume": "15",
+      "pages": "23000",
+      "cats": [
+        "vwm"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2025mapping",
+      "type": "journal",
+      "year": 2025,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Mapping additive recurrent neural networks to quantum neural networks",
+      "venue": "Quantum Information Processing",
+      "volume": "24",
+      "issue": "6",
+      "pages": "185",
+      "cats": [
+        "quantum"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "gudikandula2025brain",
+      "type": "journal",
+      "year": 2025,
+      "authors": [
+        "N. Gudikandula",
+        "R. Janapati",
+        "R. Sengupta",
+        "S. Chintala"
+      ],
+      "title": "Brain–computer interface based emotion recognition with error analysis and challenges: An interdisciplinary review",
+      "venue": "Discover Applied Sciences",
+      "volume": "7",
+      "issue": "8",
+      "pages": "857",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2024comparative",
+      "type": "journal",
+      "year": 2024,
+      "authors": [
+        "R. Sengupta",
+        "A. Shukla",
+        "R. Janapati",
+        "B. Verma"
+      ],
+      "title": "Comparative temporal dynamics of individuation and perceptual averaging using a biological neural network model",
+      "venue": "International Journal of Hybrid Intelligent Systems",
+      "volume": "20",
+      "issue": "2",
+      "pages": "145–158",
+      "cats": [
+        "time",
+        "numerosity"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "verma2023emergence",
+      "type": "journal",
+      "year": 2023,
+      "authors": [
+        "B. Verma",
+        "R. Sengupta"
+      ],
+      "title": "Emergence of behavioral phenomena and adaptation effects in human numerosity decoder using recurrent neural networks",
+      "venue": "Scientific Reports",
+      "volume": "13",
+      "pages": "19571",
+      "doi": "10.1038/s41598-023-44535-3",
+      "cats": [
+        "numerosity"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2023deceitful",
+      "type": "journal",
+      "year": 2023,
+      "authors": [
+        "R. Sengupta",
+        "P. V. R. Rao",
+        "A. Prusty",
+        "B. M. Jackson",
+        "P. V. R. Shekar"
+      ],
+      "title": "Is deceitful autobiographical memory really forgotten?",
+      "venue": "Psychological Reports",
+      "volume": "128",
+      "issue": "6",
+      "pages": "4495–4512",
+      "doi": "10.1177/00332941231213021",
+      "cats": [
+        "vwm",
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2023advances",
+      "type": "journal",
+      "year": 2023,
+      "authors": [
+        "R. Janapati",
+        "R. Sengupta",
+        "V. Dalal"
+      ],
+      "title": "Advances in modern EEG-BCI signal processing: A review",
+      "venue": "Materials Today: Proceedings",
+      "volume": "80",
+      "pages": "2563–2566",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2023classification",
+      "type": "journal",
+      "year": 2023,
+      "authors": [
+        "R. Janapati",
+        "V. Dalal",
+        "U. Desai",
+        "R. Sengupta",
+        "S. A. Kulkarni",
+        "D. J. Hemanth"
+      ],
+      "title": "Classification of visually evoked potential EEG using hybrid anchoring-based particle swarm optimized scaled conjugate gradient multi-layer perceptron classifier",
+      "venue": "International Journal on Artificial Intelligence Tools",
+      "volume": "32",
+      "pages": "2340016",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "reddy2023development",
+      "type": "journal",
+      "year": 2023,
+      "authors": [
+        "R. A. Reddy",
+        "R. Sengupta",
+        "B. M. Jackson",
+        "C. Lewis"
+      ],
+      "title": "Development of a new measure to check attitude towards water conservation",
+      "venue": "MethodsX",
+      "volume": "10",
+      "pages": "101992",
+      "cats": [
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2022oscillatory",
+      "type": "journal",
+      "year": 2022,
+      "authors": [
+        "R. Sengupta",
+        "P. V. R. Shekar"
+      ],
+      "title": "Oscillatory dynamics in complex recurrent neural networks",
+      "venue": "Biophysical Reviews and Letters",
+      "volume": "17",
+      "pages": "75–85",
+      "cats": [
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2022towards",
+      "type": "journal",
+      "year": 2022,
+      "authors": [
+        "R. Janapati",
+        "V. Dalal",
+        "U. Desai",
+        "R. Sengupta",
+        "P. V. R. Shekar",
+        "S. Kollem"
+      ],
+      "title": "Towards a more theory-driven BCI using source reconstructed dynamics of EEG time series",
+      "venue": "Nano LIFE",
+      "volume": "12",
+      "issue": "2",
+      "pages": "2250005",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2018embodied",
+      "type": "journal",
+      "year": 2018,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "How embodied is time?",
+      "venue": "Journal of the Indian Council of Philosophical Research",
+      "volume": "35",
+      "pages": "433–445",
+      "cats": [
+        "time",
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2017big",
+      "type": "journal",
+      "year": 2017,
+      "authors": [
+        "R. Sengupta",
+        "B. R. Surampudi",
+        "D. Melcher"
+      ],
+      "title": "Big and small numbers: Empirical support for a single, flexible mechanism for human numerosity perception",
+      "venue": "Attention, Perception, & Psychophysics",
+      "volume": "79",
+      "pages": "253–266",
+      "cats": [
+        "numerosity"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2014visual",
+      "type": "journal",
+      "year": 2014,
+      "authors": [
+        "R. Sengupta",
+        "B. R. Surampudi",
+        "D. Melcher"
+      ],
+      "title": "A visual sense of number emerges from the dynamics of a recurrent on-center off-surround neural network",
+      "venue": "Brain Research",
+      "volume": "1582",
+      "pages": "114–124",
+      "cats": [
+        "numerosity",
+        "theory"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2014shared",
+      "type": "journal",
+      "year": 2014,
+      "authors": [
+        "R. Sengupta",
+        "A. Knops",
+        "M. Piazza",
+        "E. Eger",
+        "D. Melcher"
+      ],
+      "title": "A shared, flexible neural map architecture reflects capacity limits in both visual short-term memory and enumeration",
+      "venue": "Journal of Neuroscience",
+      "volume": "34",
+      "pages": "9857–9866",
+      "cats": [
+        "vwm",
+        "numerosity"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2014brain",
+      "type": "journal",
+      "year": 2014,
+      "authors": [
+        "R. Sengupta",
+        "D. H. Krishna",
+        "I. A. Pasha",
+        "T. S. Savithri"
+      ],
+      "title": "Brain computer interface for mobility: A case study with an ALS patient",
+      "venue": "International Journal of Applied Engineering Research",
+      "volume": "9",
+      "pages": "26055–26070",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2025stability",
+      "type": "chapter",
+      "year": 2025,
+      "authors": [
+        "R. Sengupta",
+        "U. Desai"
+      ],
+      "title": "Stability analysis of recurrent shunting on-center off-surround neural networks with nonlinear transfer functions: An energy function approach",
+      "book": "Applied Artificial Intelligence and Machine Learning Techniques for Engineering Applications",
+      "pages": "124–136",
+      "publisher": "CRC Press",
+      "cats": [
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "gudikandula2025human",
+      "type": "chapter",
+      "year": 2025,
+      "authors": [
+        "N. Gudikandula",
+        "R. Janapati",
+        "R. Sengupta"
+      ],
+      "title": "Human–machine interactions: Evolution, current applications, and future prospects",
+      "book": "Humans and Generative AI Tools for Collaborative Intelligence",
+      "pages": "343–368",
+      "cats": [
+        "bci",
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "prusty2021dyscalculia",
+      "type": "chapter",
+      "year": 2021,
+      "authors": [
+        "A. Prusty",
+        "C. J. Yeh",
+        "R. Sengupta",
+        "A. Miller"
+      ],
+      "title": "Dyscalculia: Difficulties in making arithmetical calculation",
+      "book": "Handbook of Research on Critical Issues in Special Education for School Rehabilitation Practices",
+      "pages": "462–485",
+      "publisher": "IGI Global",
+      "cats": [
+        "numerosity"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2027long",
+      "type": "proceedings",
+      "year": 2027,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Long-range temporal correlations in enumeration: A theoretical link from on-center off-surround recurrent dynamics to DFA of reaction times",
+      "venue": "ComSIA 2026",
+      "series": "Lecture Notes in Networks and Systems",
+      "volume": "2058",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-032-31170-2_10",
+      "cats": [
+        "numerosity",
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2026modular",
+      "type": "proceedings",
+      "year": 2026,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Modular quantum recurrent neural networks: Scalable reservoir computing with high noise resilience",
+      "venue": "ICSCCC 2026",
+      "pages": "573–578",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICSCCC69031.2026.11600184",
+      "cats": [
+        "quantum"
+      ],
+      "flagship": true,
+      "web": true
+    },
+    {
+      "id": "sengupta2026algorithmic",
+      "type": "proceedings",
+      "year": 2026,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "The algorithmic self-fulfilling prophecy: Stereotype threat in AI cognitive diagnostics",
+      "venue": "FACEIT 2026",
+      "series": "Learning and Analytics in Intelligent Systems",
+      "volume": "63",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-032-29501-9_21",
+      "cats": [
+        "society"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "lazarus2026asymmetric",
+      "type": "proceedings",
+      "year": 2026,
+      "authors": [
+        "J. G. Lazarus",
+        "L. P. Gundapaneni",
+        "R. Sengupta"
+      ],
+      "title": "The asymmetric pull of falsehood: A computational model of temporal narrative drift in echo chambers",
+      "venue": "FACEIT 2026",
+      "series": "Learning and Analytics in Intelligent Systems",
+      "volume": "63",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-032-29501-9_20",
+      "cats": [
+        "society",
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2026bio",
+      "type": "proceedings",
+      "year": 2026,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Bio-inspired variance control: Decoupling signaling mode from power constraints in neuromorphic systems",
+      "venue": "IATMSI 2026",
+      "pages": "1–6",
+      "publisher": "IEEE",
+      "doi": "10.1109/IATMSI68868.2026.11465241",
+      "cats": [
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "prasannah2026modeling",
+      "type": "proceedings",
+      "year": 2026,
+      "authors": [
+        "P. Prasannah",
+        "R. Sengupta"
+      ],
+      "title": "Modeling recurrent neural networks in serial recall paradigm with dynamic self-excitation",
+      "venue": "ANTIC 2025",
+      "series": "Communications in Computer and Information Science",
+      "volume": "2921",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-032-27117-4_16",
+      "cats": [
+        "vwm",
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2025synchronization",
+      "type": "proceedings",
+      "year": 2025,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Synchronization in hybrid feedforward-recurrent neural networks with stochastic temporal modulation",
+      "venue": "ICICNCT 2025",
+      "pages": "1–8",
+      "publisher": "IEEE",
+      "cats": [
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2025temporal",
+      "type": "proceedings",
+      "year": 2025,
+      "authors": [
+        "R. Sengupta",
+        "A. Shukla",
+        "R. Janapati",
+        "B. Verma"
+      ],
+      "title": "Temporal dynamics of human perceptual averaging using a neural network model",
+      "venue": "SoCPaR 2023",
+      "series": "Lecture Notes in Networks and Systems",
+      "volume": "1245",
+      "publisher": "Springer",
+      "cats": [
+        "time",
+        "numerosity"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2024exploring",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "R. Sengupta"
+      ],
+      "title": "Exploring neural dynamics in a recurrent on-center off-surround network: Insights from a go/no-go task simulation",
+      "venue": "ICCCNT 2024",
+      "pages": "1–5",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICCCNT61001.2024.10724615",
+      "cats": [
+        "numerosity",
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2024comparing",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "R. Sengupta",
+        "A. Shukla",
+        "R. Janapati",
+        "D. H. Krishna",
+        "I. A. Pasha"
+      ],
+      "title": "Comparing visual and auditory P300-based brain–computer interfaces: An experimental study",
+      "venue": "ICCCNT 2024",
+      "pages": "1–5",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICCCNT61001.2024.10724916",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "gudikandula2024recent",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "N. Gudikandula",
+        "R. Janapati",
+        "R. Sengupta",
+        "S. Chintala"
+      ],
+      "title": "Recent advancements in online ocular artifacts removal in EEG based BCI: A review",
+      "venue": "ICCCNT 2024",
+      "pages": "1–6",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICCCNT61001.2024.10724228",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "gudikandula2024automated",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "N. Gudikandula",
+        "R. Janapati",
+        "R. Sengupta",
+        "S. Chintala"
+      ],
+      "title": "Automated electroencephalogram-based emotion detection: A review",
+      "venue": "ICoICI 2024",
+      "pages": "572–577",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICoICI62503.2024.10696472",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2024computational",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "R. Sengupta",
+        "A. Shukla",
+        "R. Janapati"
+      ],
+      "title": "A computational framework for time's subjective expansion in temporal oddball paradigm using recurrent neural network",
+      "venue": "ICACCS 2024",
+      "pages": "75–80",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICACCS60874.2024.10717225",
+      "cats": [
+        "time"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "sengupta2024emergent",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "R. Sengupta",
+        "S. Bapiraju",
+        "A. Pattanayak"
+      ],
+      "title": "Exploring emergent properties of recurrent neural networks using novel energy function formalism",
+      "venue": "LOD 2023",
+      "series": "Lecture Notes in Computer Science",
+      "volume": "14505",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-031-53969-5_23",
+      "cats": [
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "vindhya2024modeling",
+      "type": "proceedings",
+      "year": 2024,
+      "authors": [
+        "S. L. S. Vindhya",
+        "R. G. Prasanna",
+        "R. Sengupta",
+        "A. Shukla"
+      ],
+      "title": "Modeling primacy, recency, and cued recall in serial memory task using on-center off-surround recurrent neural network",
+      "venue": "LOD 2023",
+      "series": "Lecture Notes in Computer Science",
+      "volume": "14505",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-031-53969-5_30",
+      "cats": [
+        "vwm",
+        "theory"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2022advances",
+      "type": "proceedings",
+      "year": 2022,
+      "authors": [
+        "R. Janapati",
+        "V. Dalal",
+        "R. Sengupta"
+      ],
+      "title": "Advances in experimental paradigms for EEG-BCI",
+      "venue": "Recent Trends in Machine Learning, IoT, Smart Cities and Applications",
+      "series": "Lecture Notes in Networks and Systems",
+      "volume": "237",
+      "publisher": "Springer",
+      "doi": "10.1007/978-981-16-6407-6_16",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2021signal",
+      "type": "proceedings",
+      "year": 2021,
+      "authors": [
+        "R. Janapati",
+        "V. Dalal",
+        "R. Sengupta",
+        "N. Govardhan"
+      ],
+      "title": "Signal processing algorithms based on evolutionary optimization techniques in the BCI: A review",
+      "venue": "Computational Vision and Bio-Inspired Computing",
+      "series": "Advances in Intelligent Systems and Computing",
+      "volume": "1318",
+      "publisher": "Springer",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    },
+    {
+      "id": "janapati2021progression",
+      "type": "proceedings",
+      "year": 2021,
+      "authors": [
+        "R. Janapati",
+        "V. Dalal",
+        "R. Sengupta",
+        "P. V. R. Shekar"
+      ],
+      "title": "Progression of EEG-BCI classification techniques: A study",
+      "venue": "Inventive Systems and Control",
+      "series": "Lecture Notes in Networks and Systems",
+      "volume": "204",
+      "publisher": "Springer",
+      "cats": [
+        "bci"
+      ],
+      "flagship": false,
+      "web": true
+    }
+  ]
+}

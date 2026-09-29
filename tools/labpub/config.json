@@ -1,0 +1,52 @@
+{
+  "orcid": "0000-0003-1768-0551",
+  "contact_email": "rakesh.sengupta@krea.edu.in",
+  "data_file": "data/publications.json",
+
+  "cv_publications_tex": "",
+
+  "me": ["R. Sengupta", "Rakesh Sengupta"],
+  "web_name": "Rakesh Sengupta",
+
+  "students": ["J. G. Lazarus", "L. P. Gundapaneni", "B. Verma", "C. Lewis",
+               "P. Prasannah", "A. Rath", "A. Madhira"],
+
+  "categories": {
+    "numerosity": "Numerosity",
+    "vwm": "Memory",
+    "time": "Time",
+    "bci": "EEG / BCI",
+    "theory": "Network Theory",
+    "quantum": "Quantum",
+    "society": "Mind & Society"
+  },
+
+  "keep_case": ["Spinozist", "Spinoza", "Cassirer", "Cassirerian", "India", "Indian", "Telugu",
+                "Bayesian", "Hamiltonian", "Gaussian", "Markov", "Hopfield", "Grossberg",
+                "Cohen-Grossberg", "DFA", "OCOS", "EEG", "ERP", "BCI", "ALS", "AI", "P300"],
+
+  "series_names": ["Lecture Notes in", "Communications in Computer and Information Science",
+                   "Advances in Intelligent Systems and Computing",
+                   "Learning and Analytics in Intelligent Systems",
+                   "Smart Innovation, Systems and Technologies", "Studies in Computational Intelligence"],
+
+  "publisher_short": {
+    "Springer": "Springer",
+    "Institute of Electrical and Electronics Engineers": "IEEE",
+    "IEEE": "IEEE",
+    "Elsevier": "Elsevier",
+    "SAGE": "SAGE",
+    "Informa UK": "Taylor & Francis",
+    "Taylor & Francis": "Taylor & Francis",
+    "IGI Global": "IGI Global",
+    "CRC Press": "CRC Press",
+    "River Publishers": "River Publishers",
+    "Frontiers Media": "Frontiers",
+    "IOS Press": "IOS Press",
+    "World Scientific": "World Scientific",
+    "Wiley": "Wiley",
+    "Oxford University Press": "Oxford University Press",
+    "Cambridge University Press": "Cambridge University Press",
+    "MDPI": "MDPI"
+  }
+}
